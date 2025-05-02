@@ -1,0 +1,486 @@
+Substance,Genotoxicity,SMILES_x,Matched_SMILES,LogP,SMILES_y,TPSA,formula,hbond_acceptors,hbond_donors,num_atoms,num_bonds,rotatable_bonds,weight
+"(-)-3,7-Dimethyl-6-octen-1-ol",Negative,cc(c)=cccc(c)cco,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+(E)-Hexyl 2-hexenoate,Not determined,ccc/c=c/c(=o)occcccc,ccc/c=c1/oc(=o)c2ccccc12,2.998000000000001,ccc/c=c1/oc(=o)c2ccccc12,26.3,C12H12O2,2.0,0.0,14.0,15.0,2.0,188.226
+(E)-pent-2-enoic acid,Not determined,cc/c=c/c(=o)o,ncco/c=c/c(n)c(=o)o,-1.112699999999999,ncco/c=c/c(n)c(=o)o,98.57,C6H12N2O3,4.0,3.0,11.0,10.0,5.0,160.17299999999997
+(Z)-5-Octen-2-one,Negative,cc/c=c\ccc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+(Z)-9-Hexadecenal,No data,cccccc/c=c\cccccccc=o,cccccccc/c=c\cccccccc(=o)[o-],4.773800000000004,cccccccc/c=c\cccccccc(=o)[o-],40.129999999999995,C18H33O2-,2.0,0.0,20.0,19.0,15.0,281.4599999999999
+"1,1-Diethoxydodecane",Negative,cccccccccccc(occ)occ,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+"1,1-Dimethoxyheptane",Negative,ccccccc(oc)oc,ccccccb(o)o,1.0394999999999999,ccccccb(o)o,40.46,C6H15BO2,2.0,2.0,9.0,8.0,5.0,129.996
+"1,1-Dimethoxyhexane",Negative,cccccc(oc)oc,ccccccb(o)o,1.0394999999999999,ccccccb(o)o,40.46,C6H15BO2,2.0,2.0,9.0,8.0,5.0,129.996
+"1,1-Dimethoxyoctane",Negative,cccccccc(oc)oc,ccccccb(o)o,1.0394999999999999,ccccccb(o)o,40.46,C6H15BO2,2.0,2.0,9.0,8.0,5.0,129.996
+"1,1-Dimethoxypentane",Negative,ccccc(oc)oc,ccccccb(o)o,1.0394999999999999,ccccccb(o)o,40.46,C6H15BO2,2.0,2.0,9.0,8.0,5.0,129.996
+"1,1-Dimethylethyl propionate",Negative,ccc(=o)oc(c)(c)c,cc(=o)occ[n+](c)(c)c,0.25570000000000004,cc(=o)occ[n+](c)(c)c,26.3,C7H16NO2+,2.0,0.0,10.0,9.0,3.0,146.21
+"1,2,3-Trimethoxybenzene",Negative,coc1c=cc=c(oc)c=1oc,oc1cccc(o)c1o,0.8033999999999997,oc1cccc(o)c1o,60.69,C6H6O3,3.0,3.0,9.0,9.0,0.0,126.11099999999998
+"1,2,5,6-Tetrahydrocuminic acid",Not determined,cc(c)c1ccc(c(=o)o)cc=1,o=c(o)c1ccnc(c(=o)o)c1,0.478,o=c(o)c1ccnc(c(=o)o)c1,87.49000000000001,C7H5NO4,3.0,2.0,12.0,12.0,2.0,167.11999999999998
+"1,3-Dicyclohexylurea",Negative,o=c(nc1ccccc1)nc1ccccc1,o=c(nc1ccccc1)nc1ccccc1,3.3306000000000013,o=c(nc1ccccc1)nc1ccccc1,41.13,C13H12N2O,1.0,2.0,16.0,17.0,2.0,212.25199999999998
+"1,3-Dimethoxy-benzene",Negative,coc1c=cc=c(oc)c=1,oc1cccc(o)c1o,0.8033999999999997,oc1cccc(o)c1o,60.69,C6H6O3,3.0,3.0,9.0,9.0,0.0,126.11099999999998
+"1,4-Bis(hydroxymethyl)cyclohexane",Negative,occ1ccc(co)cc1,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+"1,4-Cyclohexanedicarboxylic acid",Negative,o=c(o)c1ccc(c(=o)o)cc1,o=c(o)c1ccnc(c(=o)o)c1,0.478,o=c(o)c1ccnc(c(=o)o)c1,87.49000000000001,C7H5NO4,3.0,2.0,12.0,12.0,2.0,167.11999999999998
+"1,4-naphthoquinone",Negative,o=c1c=cc(=o)c2c1=cc=cc=2,o=c1c=cc(=o)c2ccccc12,1.6218000000000001,o=c1c=cc(=o)c2ccccc12,34.14,C10H6O2,2.0,0.0,12.0,13.0,0.0,158.156
+"1,6-Hexalactam",Not determined,o=c1cccccn1,o=cncc1ccccc1,0.9325999999999999,o=cncc1ccccc1,29.1,C8H9NO,1.0,1.0,10.0,10.0,3.0,135.16599999999997
+"1,6-Hexalactam",Not determined,o=c1cccccn1,o=cncc1ccccc1,1.3127,o=cncc1ccccc1,29.1,C8H15NO,1.0,1.0,10.0,10.0,3.0,141.214
+"1-(3,5-Dimethoxy-4-hydroxyphenyl)propan-1-one",Not determined,ccc(=o)c1c=c(oc)c(o)=c(oc)c=1,o=c(o)c1cc(o)c(o)c(o)c1,0.5015999999999998,o=c(o)c1cc(o)c(o)c(o)c1,97.99000000000001,C7H6O5,4.0,4.0,12.0,12.0,1.0,170.11999999999998
+1-(4-Methoxyphenyl)pent-1-en-3-one,Ambiguous,ccc(=o)c=cc1c=cc(oc)=cc=1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+1-Decanol,Negative,cccccccccco,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+1-Hepten-3-ol,Ambiguous,c=cc(o)cccc,c=ccss(=o)cc=c,1.7553,c=ccss(=o)cc=c,17.07,C6H10OS2,2.0,0.0,9.0,8.0,5.0,162.27899999999997
+1-Methoxy-1-decene,Not determined,ccccccccc=coc,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+"1-Methyl-1,3-cyclohexadiene",Not determined,cc1ccc=cc=1,cc1ccccc1,1.99502,cc1ccccc1,0.0,C7H8,0.0,0.0,7.0,7.0,0.0,92.14099999999999
+1-Methylpyrrolidine,Negative,cn1cccc1,cc1ccccc1,1.99502,cc1ccccc1,0.0,C7H8,0.0,0.0,7.0,7.0,0.0,92.14099999999999
+1-Nonene-3-one,Ambiguous,c=cc(=o)cccccc,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+1-Phenethyl acetate,Not determined,cc(=o)occc1c=cc=cc=1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+1-Phenethyl butyrate,Not determined,cccc(=o)occc1c=cc=cc=1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+1-Phenethyl formate,Not determined,o=coccc1c=cc=cc=1,o=cncc1ccccc1,0.9325999999999999,o=cncc1ccccc1,29.1,C8H9NO,1.0,1.0,10.0,10.0,3.0,135.16599999999997
+1-Phenethyl formate,Not determined,o=coccc1c=cc=cc=1,o=cncc1ccccc1,1.3127,o=cncc1ccccc1,29.1,C8H15NO,1.0,1.0,10.0,10.0,3.0,141.214
+1-Phenethyl propionate,Not determined,ccc(=o)occc1c=cc=cc=1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+"1-Phenylpropan-1,2-dione",Not determined,cc(=o)c(=o)c1c=cc=cc=1,ns(=o)(=o)c1ccccc1,0.3340000000000002,ns(=o)(=o)c1ccccc1,60.160000000000004,C6H7NO2S,2.0,1.0,10.0,10.0,1.0,157.194
+1-Phenylpropan-1-one,Not determined,ccc(=o)c1c=cc=cc=1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+"1a,2,2a,5a,6,6a-Hexahydrooxireno[2,3-f]isoindole-3,5-dione",Not determined,o=c1nc(=o)c2cc3oc3cc12,o=c1c=cc(=o)c2ccccc12,1.6218000000000001,o=c1c=cc(=o)c2ccccc12,34.14,C10H6O2,2.0,0.0,12.0,13.0,0.0,158.156
+"2,2-Bis(4-hydroxyphenyl)propane",Negative,cc(c)(c1c=cc(o)=cc=1)c1c=cc(o)=cc=1,cc(c)(c1ccc(o)cc1)c1ccc(o)cc1,3.423700000000002,cc(c)(c1ccc(o)cc1)c1ccc(o)cc1,40.46,C15H16O2,2.0,2.0,17.0,18.0,2.0,228.291
+"2,4-Decadienal",Ambiguous,cccccc=cc=cc=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+"2,4-Dihydroxybenzoic acid",Negative,o=c(o)c1c=cc(o)=cc=1o,o=c(o)cc1ccc(o)cc1,1.0192999999999999,o=c(o)cc1ccc(o)cc1,57.53,C8H8O3,2.0,2.0,11.0,11.0,2.0,152.149
+"2,4-Octadienal",Ambiguous,cccc=cc=cc=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+"2,5-Diethyltetrahydrofuran",Not determined,ccc1ccc(cc)o1,cc1ccccc1,1.99502,cc1ccccc1,0.0,C7H8,0.0,0.0,7.0,7.0,0.0,92.14099999999999
+"2,5-Dihydroxy-1,4-dithiane",Not determined,oc1csc(o)cs1,oc1cccc(o)c1o,0.8033999999999997,oc1cccc(o)c1o,60.69,C6H6O3,3.0,3.0,9.0,9.0,0.0,126.11099999999998
+"2,5-Dimethylphenol",Negative,cc1c=cc(c)=c(o)c=1,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+"2,5-Dimethyltetrahydrofuran",Not determined,cc1ccc(c)o1,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+"2,6,6-Trimethylcyclohex-2-en-1,4-dione",Negative,cc1c(=o)c(c)(c)cc(=o)c=1,cc1c(=o)c2cccc(o)c2c(=o)c=1,1.7175,cc1c(=o)c2cccc(o)c2c(=o)c=1,54.37,C11H8O3,3.0,1.0,14.0,15.0,0.0,188.182
+"2,6-Dimethoxyphenol",Not determined,coc1c=cc=c(oc)c=1o,oc1cccc(o)c1o,0.8033999999999997,oc1cccc(o)c1o,60.69,C6H6O3,3.0,3.0,9.0,9.0,0.0,126.11099999999998
+"2,6-Dimethyl-2-heptanol",Negative,cc(c)cccc(c)(c)o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+"2,6-Dimethylhept-5-enal",Not determined,cc(c)=cccc(c)c=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+2-(2-Oxotetradecanoyl) benzoic acid,Negative,ccccccccccccc(=o)c(=o)c1c=cc=cc=1c(=o)o,ccccccccccccc(=o)nc(cccc)ccc(=o)o,5.8372000000000055,ccccccccccccc(=o)nc(cccc)ccc(=o)o,66.4,C21H41NO3,2.0,2.0,25.0,24.0,18.0,355.56300000000016
+2-(4-Hydroxyphenyl)ethan-1-ol,Negative,occc1c=cc(o)=cc=1,o=c(o)cc1ccc(o)cc1,1.0192999999999999,o=c(o)cc1ccc(o)cc1,57.53,C8H8O3,2.0,2.0,11.0,11.0,2.0,152.149
+2-(sec-Butyl)thiazole,Not determined,ccc(c)c1sc=cn=1,ccc(cc)cn1ccnc1,2.3193,ccc(cc)cn1ccnc1,17.82,C9H16N2,2.0,0.0,11.0,11.0,4.0,152.24099999999999
+2-Acetyl-3-methylthiophene,Not determined,cc1c=csc=1c(c)=o,cc1ccsc1c(=o)o,1.75472,cc1ccsc1c(=o)o,37.3,C6H6O2S,2.0,1.0,9.0,9.0,1.0,142.179
+2-Aminoacetophenone,Ambiguous,ncc(=o)c1c=cc=cc=1,ncc(o)c1ccc(o)cc1,0.3843,ncc(o)c1ccc(o)cc1,66.48,C8H11NO2,3.0,3.0,11.0,11.0,2.0,153.18099999999998
+2-Cyclohexylethan-1-ol,Not determined,occc1ccccc1,o=cncc1ccccc1,0.9325999999999999,o=cncc1ccccc1,29.1,C8H9NO,1.0,1.0,10.0,10.0,3.0,135.16599999999997
+2-Cyclohexylethan-1-ol,Not determined,occc1ccccc1,o=cncc1ccccc1,1.3127,o=cncc1ccccc1,29.1,C8H15NO,1.0,1.0,10.0,10.0,3.0,141.214
+2-Cyclohexylethyl acetate,Not determined,cc(=o)occc1ccccc1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+2-Dodecenal,Negative,cccccccccc=cc=o,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+2-Ethylbutyric acid,Negative,ccc(cc)c(=o)o,ccccccb(o)o,1.0394999999999999,ccccccb(o)o,40.46,C6H15BO2,2.0,2.0,9.0,8.0,5.0,129.996
+2-Ethylhexanal,Negative,ccccc(c=o)cc,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+2-Ethylhexanol,Negative,ccccc(cc)co,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+2-Heptenal,Ambiguous,ccccc=cc=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+2-Hexenal,Ambiguous,cccc=cc=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+2-Hexenoic acid,Negative,cccc=cc(=o)o,ccccccb(o)o,1.0394999999999999,ccccccb(o)o,40.46,C6H15BO2,2.0,2.0,9.0,8.0,5.0,129.996
+2-Hexenyl octanoate,Ambiguous,cccc=ccoc(=o)ccccccc,ccc/c=c1/oc(=o)c2ccccc12,2.998000000000001,ccc/c=c1/oc(=o)c2ccccc12,26.3,C12H12O2,2.0,0.0,14.0,15.0,2.0,188.226
+2-Hydroxy-4-methylvaleric acid,Negative,cc(c)cc(o)c(=o)o,o=c(o)cnc(=o)c(=o)o,-1.7282000000000002,o=c(o)cnc(=o)c(=o)o,103.70000000000002,C4H5NO5,3.0,3.0,10.0,9.0,2.0,147.08599999999998
+2-Hydroxyacetophenone,Not determined,o=c(co)c1c=cc=cc=1,o=c(o)c1ccccc1o,1.0903999999999998,o=c(o)c1ccccc1o,57.53,C7H6O3,2.0,2.0,10.0,10.0,1.0,138.12199999999999
+2-Hydroxycyclohex-2-en-1-one,Negative,o=c1cccc=c1o,o=c(o)c1ccccc1o,1.0903999999999998,o=c(o)c1ccccc1o,57.53,C7H6O3,2.0,2.0,10.0,10.0,1.0,138.12199999999999
+2-Methyl-2-pentenoic acid,Negative,ccc=c(c)c(=o)o,ccccccb(o)o,1.0394999999999999,ccccccb(o)o,40.46,C6H15BO2,2.0,2.0,9.0,8.0,5.0,129.996
+2-Methyl-acetophenone,Not determined,ccc(=o)c1c=cc=cc=1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+2-Methylbenzene-1-thiol,No data,cc1c=cc=cc=1s,cc1ccccc1,1.99502,cc1ccccc1,0.0,C7H8,0.0,0.0,7.0,7.0,0.0,92.14099999999999
+2-Methylbutyl decanoate,Not determined,cccccccccc(=o)occ(c)cc,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+2-Methylbutyl dodecanoate,Not determined,cccccccccccc(=o)occ(c)cc,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+2-Methylbutyl octanoate,Not determined,cccccccc(=o)occ(c)cc,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+2-Methylbutyl tetradecanoate,Not determined,cccccccccccccc(=o)occ(c)cc,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+2-Methylcyclohexanone,Negative,cc1ccccc1=o,cc1ccccc1,1.99502,cc1ccccc1,0.0,C7H8,0.0,0.0,7.0,7.0,0.0,92.14099999999999
+2-Methyldecanal,Not determined,ccccccccc(c)c=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+2-Methylheptanoic acid,Negative,cccccc(c)c(=o)o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+2-Methylhexanal,Not determined,ccccc(c)c=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+2-Methyloct-(2E)-enal,Ambiguous,ccccc/c=c(\c)c=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+2-Methyloctan-1-ol,Not determined,ccccccc(c)co,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+2-Methylphenol,Not determined,cc1c=cc=cc=1o,cc1ccccc1,1.99502,cc1ccccc1,0.0,C7H8,0.0,0.0,7.0,7.0,0.0,92.14099999999999
+2-Methylpiperidine,Not determined,cc1ccccn1,cc1ccccc1,1.99502,cc1ccccc1,0.0,C7H8,0.0,0.0,7.0,7.0,0.0,92.14099999999999
+2-Methylundecanal,No data,cccccccccc(c)c=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+2-Methylvaleric acid,No data,cccc(c)c(=o)o,ccccccb(o)o,1.0394999999999999,ccccccb(o)o,40.46,C6H15BO2,2.0,2.0,9.0,8.0,5.0,129.996
+2-Phenylethan-1-ol,Negative,occc1c=cc=cc=1,o=cncc1ccccc1,0.9325999999999999,o=cncc1ccccc1,29.1,C8H9NO,1.0,1.0,10.0,10.0,3.0,135.16599999999997
+2-Phenylethan-1-ol,Negative,occc1c=cc=cc=1,o=cncc1ccccc1,1.3127,o=cncc1ccccc1,29.1,C8H15NO,1.0,1.0,10.0,10.0,3.0,141.214
+2-Phenylpent-4-enal,Negative,c=ccc(c=o)c1c=cc=cc=1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+2-Undecen-4-one,Not determined,cc=cc(=o)ccccccc,o=c1c=cc(=o)c2ccccc12,1.6218000000000001,o=c1c=cc(=o)c2ccccc12,34.14,C10H6O2,2.0,0.0,12.0,13.0,0.0,158.156
+2-Undecenal,Ambiguous,ccccccccc=cc=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+2-[(2-Hydroxypropanoyl)amino]ethyl dihydrogen phosphate,Negative,cc(o)c(=o)nccop(=o)(o)o,o=c(o)c(=o)cs(=o)(=o)o,-1.4720999999999997,o=c(o)c(=o)cs(=o)(=o)o,108.73999999999998,C3H4O6S,4.0,2.0,10.0,9.0,3.0,168.126
+"3,4-Dihydroxybenzoic acid",Negative,o=c(o)c1c=cc(o)=c(o)c=1,o=c(o)c1csc(o)(o)c1,-0.5375000000000003,o=c(o)c1csc(o)(o)c1,77.76,C5H8O4S,4.0,3.0,10.0,10.0,1.0,164.18200000000002
+"3,5-Dimethylcyclopentan-1,2-dione",Negative,cc1cc(c)c(=o)c1=o,oc1cccc(o)c1o,0.8033999999999997,oc1cccc(o)c1o,60.69,C6H6O3,3.0,3.0,9.0,9.0,0.0,126.11099999999998
+"3,5-Dimethylpyridine",Negative,cc1c=nc=c(c)c=1,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+"3,5-Octadiene-2-one",Negative,ccc=cc=cc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+"3,7-Dimethyl-2,6-octadienoic acid",Not determined,cc(c)=cccc(c)=cc(=o)o,nc(n)=ncccc(cs)c(=o)o,-0.3294000000000004,nc(n)=ncccc(cs)c(=o)o,101.70000000000002,C7H15N3O2S,3.0,4.0,13.0,12.0,6.0,205.283
+"3,7-Dimethyloctan-1-ol",No data,cc(c)cccc(c)cco,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+"3-(1-Menthoxy)propane-1,2-diol",Negative,cc(c)c1ccc(c)(occ(o)co)cc1,ccn(cc)c1ccc2c(c)cc(=o)oc2c1,2.9476200000000015,ccn(cc)c1ccc2c(c)cc(=o)oc2c1,33.45,C14H17NO2,3.0,0.0,17.0,18.0,3.0,231.29499999999996
+3-(Hydroxymethyl)octan-2-one,Not determined,cccccc(co)c(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+3-(Methylthio)-decanal,Not determined,cccccccc(cc=o)sc,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+3-(Methylthio)heptanal,Not determined,ccccc(cc=o)sc,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+3-Acetamidophenol,Not determined,cc(=o)nc1c=c(o)c=cc=1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+3-Butylidenephthalide,Not determined,cccc=c1oc(=o)c2c1=cc=cc=2,ccc/c=c1/oc(=o)c2ccccc12,2.998000000000001,ccc/c=c1/oc(=o)c2ccccc12,26.3,C12H12O2,2.0,0.0,14.0,15.0,2.0,188.226
+3-Butylphthalide,Not determined,ccccc1oc(=o)c2c1=cc=cc=2,ccc/c=c1/oc(=o)c2ccccc12,2.998000000000001,ccc/c=c1/oc(=o)c2ccccc12,26.3,C12H12O2,2.0,0.0,14.0,15.0,2.0,188.226
+"3-Ethylcyclopentan-1,2-dione",Negative,ccc1ccc(=o)c1=o,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+3-Hexenal,Negative,ccc=ccc=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+3-Hexenyl formate,Negative,ccc=cccoc=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+3-Hydroxy-4-phenylbutane-2-one,Not determined,cc(=o)c(o)cc1c=cc=cc=1,cp(=o)(o)c1ccncc=1,0.7637999999999999,cp(=o)(o)c1ccncc=1,49.33,C6H12NO2P,2.0,2.0,10.0,10.0,1.0,161.14099999999996
+3-Hydroxybenzoic acid,Negative,o=c(o)c1c=cc=c(o)c=1,o=c(o)c1cccc(o)c1,1.0903999999999998,o=c(o)c1cccc(o)c1,57.53,C7H6O3,2.0,2.0,10.0,10.0,1.0,138.12199999999999
+3-Mercaptodecanal,Not determined,cccccccc(s)cc=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+3-Mercaptooctanal,Not determined,cccccc(s)cc=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+3-Methyl-2-cyclopenten-1-one,Ambiguous,cc1ccc(=o)c=1,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+3-Methylbutyl dodecanoate,No data,cccccccccccc(=o)occc(c)c,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+3-Methylbutyl octanoate,No data,cccccccc(=o)occc(c)c,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+3-Methylbutyl propionate,No data,ccc(=o)occc(c)c,cc(=o)occ[n+](c)(c)c,0.25570000000000004,cc(=o)occ[n+](c)(c)c,26.3,C7H16NO2+,2.0,0.0,10.0,9.0,3.0,146.21
+3-Methylcyclohex-2-en-1-one,Negative,cc1cccc(=o)c=1,nncc1cccc(o)c1,0.35549999999999965,nncc1cccc(o)c1,58.28,C7H10N2O,3.0,3.0,10.0,10.0,2.0,138.16999999999996
+"3-Methylcyclohexan-1,2-dione",Negative,cc1cccc(=o)c1=o,oc1cccc(o)c1o,0.8033999999999997,oc1cccc(o)c1o,60.69,C6H6O3,3.0,3.0,9.0,9.0,0.0,126.11099999999998
+3-Methylcyclohexanone,Negative,cc1cccc(=o)c1,nncc1cccc(o)c1,0.35549999999999965,nncc1cccc(o)c1,58.28,C7H10N2O,3.0,3.0,10.0,10.0,2.0,138.16999999999996
+3-Methylcyclopentadecan-1-one,Not determined,cc1ccccccccccccc(=o)c1,ccccccccccccccc(co)ncc,5.0480000000000045,ccccccccccccccc(co)ncc,32.26,C18H39NO,2.0,2.0,20.0,19.0,16.0,285.516
+"3-Methylcyclopentan-1,2-dione",Negative,cc1ccc(=o)c1=o,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+3-Methylhexanal,Not determined,cccc(c)cc=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+3-Methylhexanoic acid,Not determined,cccc(c)cc(=o)o,ccccccb(o)o,1.0394999999999999,ccccccb(o)o,40.46,C6H15BO2,2.0,2.0,9.0,8.0,5.0,129.996
+3-Oxohexadecanoic acid glyceride,Not determined,cccccccccccccc(=o)cc(=o)o.occ(o)co,cccccccccccccccc(=o)ncc(=o)o,4.6685000000000025,cccccccccccccccc(=o)ncc(=o)o,66.4,C18H35NO3,2.0,2.0,22.0,21.0,16.0,313.482
+3-Phenylpent-4-enal,Not determined,c=cc(cc=o)c1c=cc=cc=1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+3-Phenylpropionic acid,Not determined,o=c(o)ccc1c=cc=cc=1,o=c(o)cc1ccccc1o,1.0192999999999999,o=c(o)cc1ccccc1o,57.53,C8H8O3,2.0,2.0,11.0,11.0,2.0,152.14899999999997
+3-Phenylpyruvic acid,Not determined,o=c(o)c(=o)cc1c=cc=cc=1,o=p(o)(o)cc1ccccc1,1.3642999999999998,o=p(o)(o)cc1ccccc1,57.53,C7H9O3P,1.0,2.0,11.0,11.0,2.0,172.12
+3-Propylidenephthalide,Not determined,ccc=c1oc(=o)c2c1=cc=cc=2,ccc/c=c1/oc(=o)c2ccccc12,2.998000000000001,ccc/c=c1/oc(=o)c2ccccc12,26.3,C12H12O2,2.0,0.0,14.0,15.0,2.0,188.226
+3-Pyridazinone,Not determined,o=c1c=cc=nn1,o=c1ccc(=o)n1,-0.577,o=c1ccc(=o)n1,46.17,C4H5NO2,2.0,1.0,7.0,7.0,0.0,99.089
+"4',5,7-Trihydroxyflavanone",Not determined,o=c1cc(c2c=cc(o)=cc=2)oc2c1=c(o)c=c(o)c=2,o=c1cc(c2ccc(o)cc2)oc2cc(o)cc(o)c12,2.509900000000001,o=c1cc(c2ccc(o)cc2)oc2cc(o)cc(o)c12,86.99000000000001,C15H12O5,5.0,3.0,20.0,22.0,1.0,272.25600000000003
+"4,5-Dihydrothiophen-3(2H)-one",Not determined,o=c1ccsc1,o=cc1cccnc1,0.8940999999999999,o=cc1cccnc1,29.96,C6H5NO,2.0,0.0,8.0,8.0,1.0,107.11199999999998
+4-(4-Methoxyphenyl)butan-2-one,Not determined,coc1c=cc(ccc(c)=o)=cc=1,coc1ccc2cccc(ccnc(c)=o)c2c1,2.527,coc1ccc2cccc(ccnc(c)=o)c2c1,38.33,C15H17NO2,2.0,1.0,18.0,19.0,4.0,243.30599999999995
+4-(methylsulfonyl)-2-nitrobenzoic acid,Negative,cs(=o)(=o)c1c=cc(c(=o)o)=c([n+](=o)[o-])c=1,ns(=o)(=o)oc1cccc([n+](=o)[o-])c1,0.17709999999999965,ns(=o)(=o)oc1cccc([n+](=o)[o-])c1,112.53,C6H6N2O5S,5.0,1.0,14.0,14.0,3.0,218.19
+4-(p-Hydroxyphenyl)butan-2-one,Negative,cc(=o)ccc1c=cc(o)=cc=1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+4-Acetamidophenol,Not determined,cc(=o)nc1c=cc(o)=cc=1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+4-Acetylbenzene sulfonamide,No data,cc(=o)c1c=cc(s(n)(=o)=o)=cc=1,cccccc1ccc(s(n)(=o)=o)cc1,2.0667,cccccc1ccc(s(n)(=o)=o)cc1,60.160000000000004,C11H17NO2S,2.0,1.0,15.0,15.0,5.0,227.32899999999998
+4-Acetylpyridine,Negative,cc(=o)c1c=cn=cc=1,nnc(=o)c1ccncc1,-0.3149000000000006,nnc(=o)c1ccncc1,68.00999999999999,C6H7N3O,3.0,2.0,10.0,10.0,1.0,137.142
+4-Ethylbenzaldehyde,Negative,ccc1c=cc(c=o)=cc=1,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+4-Ethyloctanal,Not determined,ccccc(cc)ccc=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+4-Ethyloctanoic acid,Negative,ccccc(cc)ccc(=o)o,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+4-Hexen-3-one,Ambiguous,cc=cc(=o)cc,c=ccss(=o)cc=c,1.7553,c=ccss(=o)cc=c,17.07,C6H10OS2,2.0,0.0,9.0,8.0,5.0,162.27899999999997
+4-Hydroxy-4-methylpentan-2-one,Negative,cc(=o)cc(c)(c)o,cc(=o)occ[n+](c)(c)c,0.25570000000000004,cc(=o)occ[n+](c)(c)c,26.3,C7H16NO2+,2.0,0.0,10.0,9.0,3.0,146.21
+4-Hydroxyacetophenone,Not determined,cc(=o)c1c=cc(o)=cc=1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+4-Hydroxybenzaldehyde,Negative,o=cc1c=cc(o)=cc=1,o=c(o)cc1ccc(o)cc1,1.0192999999999999,o=c(o)cc1ccc(o)cc1,57.53,C8H8O3,2.0,2.0,11.0,11.0,2.0,152.149
+4-Hydroxybenzoic acid,Negative,o=c(o)c1c=cc(o)=cc=1,o=c(o)cc1ccc(o)cc1,1.0192999999999999,o=c(o)cc1ccc(o)cc1,57.53,C8H8O3,2.0,2.0,11.0,11.0,2.0,152.149
+4-Hydroxyhexan-3-one,Negative,ccc(=o)c(o)cc,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+4-Isopropylbenzyl alcohol,Negative,cc(c)c1c=cc(co)=cc=1,ncc(o)c1ccc(o)cc1,0.3843,ncc(o)c1ccc(o)cc1,66.48,C8H11NO2,3.0,3.0,11.0,11.0,2.0,153.18099999999998
+4-Isopropylcyclohex-2-en-1-one,Negative,cc(c)c1c=cc(=o)cc1,ncc(o)c1ccc(o)cc1,0.3843,ncc(o)c1ccc(o)cc1,66.48,C8H11NO2,3.0,3.0,11.0,11.0,2.0,153.18099999999998
+4-Mercapto-4-methyl-2-pentanone,Ambiguous,cc(=o)cc(c)(c)s,cc(=o)occ[n+](c)(c)c,0.25570000000000004,cc(=o)occ[n+](c)(c)c,26.3,C7H16NO2+,2.0,0.0,10.0,9.0,3.0,146.21
+4-Methoxybenzaldehyde,Negative,coc1c=cc(c=o)=cc=1,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+4-Methyldecanoic acid,Not determined,ccccccc(c)ccc(=o)o,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+4-Methylhexanoic acid,Not determined,ccc(c)ccc(=o)o,ccccccb(o)o,1.0394999999999999,ccccccb(o)o,40.46,C6H15BO2,2.0,2.0,9.0,8.0,5.0,129.996
+4-Methylimidazolidin-2-one,Negative,cc1cnc(=o)n1,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+4-Methylnonanoic acid,No data,cccccc(c)ccc(=o)o,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+4-Tetrahydrothiopyranone,Not determined,o=c1ccscc1,o=cc1cccnc1,0.8940999999999999,o=cc1cccnc1,29.96,C6H5NO,2.0,0.0,8.0,8.0,1.0,107.11199999999998
+"5,6-Dimethyl-tetrahydro-pyran-2-one",Negative,cc1ccc(=o)oc1c,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+5-Ethyl-2-methylpyridine,Negative,ccc1c=cc(c)=nc=1,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+5-Methylfuran-3(2H)-one,Ambiguous,cc1occ(=o)c=1,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+"6-Acetyl-2,3-dihydro-1,4-thiazine",Ambiguous,cc(=o)c1sccnc=1,nnc(=o)c1ccncc1,-0.3149000000000006,nnc(=o)c1ccncc1,68.00999999999999,C6H7N3O,3.0,2.0,10.0,10.0,1.0,137.142
+6-Methylhept-5-en-2-one,Negative,cc(c)=cccc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+8-Methoxypsoralen,Positive,coc1c2oc=cc=2c=c2c=cc(=o)oc2=1,coc1c2occc2cc2ccc(=o)oc21,2.5478000000000005,coc1c2occc2cc2ccc(=o)oc21,52.58,C12H8O4,4.0,0.0,16.0,18.0,1.0,216.19199999999995
+9-Decen-2-one,Negative,c=cccccccc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+9-Octadecenal,Negative,ccccccccc=ccccccccc=o,cccccccc/c=c\cccccccc(=o)[o-],4.773800000000004,cccccccc/c=c\cccccccc(=o)[o-],40.129999999999995,C18H33O2-,2.0,0.0,20.0,19.0,15.0,281.4599999999999
+Allyl alpha-ionone,Ambiguous,c=cccc(=o)/c=c/c1c(c)=cccc1(c)c,ccccc(=o)/c=c/c1cccc(o)c1o,2.870300000000002,ccccc(=o)/c=c/c1cccc(o)c1o,57.53,C13H16O3,3.0,2.0,16.0,16.0,5.0,220.268
+Allyl butyrate,Ambiguous,c=ccoc(=o)ccc,c=ccss(=o)cc=c,1.7553,c=ccss(=o)cc=c,17.07,C6H10OS2,2.0,0.0,9.0,8.0,5.0,162.27899999999997
+Allyl cyclohexaneacetate,Ambiguous,c=ccoc(=o)cc1ccccc1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+Allyl cyclohexanebutyrate,Ambiguous,c=ccoc(=o)cccc1ccccc1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+Allyl cyclohexanepropionate,Ambiguous,c=ccoc(=o)ccc1ccccc1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+Allyl heptanoate,Ambiguous,c=ccoc(=o)cccccc,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+Allyl isovalerate,Ambiguous,c=ccoc(=o)cc(c)c,c=cc1c(co)cnc(c)c1o,1.2309199999999998,c=cc1c(co)cnc(c)c1o,53.35000000000001,C9H11NO2,3.0,2.0,12.0,12.0,2.0,165.19199999999998
+Allylthio hexanoate,Negative,c=ccsoc(=o)ccccc,c=ccss(=o)cc=c,1.7553,c=ccss(=o)cc=c,17.07,C6H10OS2,2.0,0.0,9.0,8.0,5.0,162.27899999999997
+Amidated pectin,Negative,o=cc(o)c(o)c(o)co,o=c(o)cnc(=o)c(=o)o,-1.7282000000000002,o=c(o)cnc(=o)c(=o)o,103.70000000000002,C4H5NO5,3.0,3.0,10.0,9.0,2.0,147.08599999999998
+Anisole,Negative,coc1c=cc=cc=1,cc1ccccc1,1.99502,cc1ccccc1,0.0,C7H8,0.0,0.0,7.0,7.0,0.0,92.14099999999999
+Behenic acid,No data,cccccccccccccccccccccc(=o)o,cccccccccccccccc1cccc(o)c1c(=o)o,6.724100000000008,cccccccccccccccc1cccc(o)c1c(=o)o,57.53,C22H36O3,2.0,2.0,25.0,25.0,15.0,348.52700000000004
+Benzaldehyde,Negative,o=cc1c=cc=cc=1,o=cncc1ccccc1,0.9325999999999999,o=cncc1ccccc1,29.1,C8H9NO,1.0,1.0,10.0,10.0,3.0,135.16599999999997
+Benzaldehyde,Negative,o=cc1c=cc=cc=1,o=cncc1ccccc1,1.3127,o=cncc1ccccc1,29.1,C8H15NO,1.0,1.0,10.0,10.0,3.0,141.214
+"Benzene-1,3-diol",Negative,oc1c=cc=c(o)c=1,oc1cccc(o)c1o,0.8033999999999997,oc1cccc(o)c1o,60.69,C6H6O3,3.0,3.0,9.0,9.0,0.0,126.11099999999998
+Benzoic acid,Negative,o=c(o)c1c=cc=cc=1,o=c(o)c1ccccc1o,1.0903999999999998,o=c(o)c1ccccc1o,57.53,C7H6O3,2.0,2.0,10.0,10.0,1.0,138.12199999999999
+Benzophenone,Negative,o=c(c1c=cc=cc=1)c1c=cc=cc=1,o=c(nc1ccccc1)nc1ccccc1,3.3306000000000013,o=c(nc1ccccc1)nc1ccccc1,41.13,C13H12N2O,1.0,2.0,16.0,17.0,2.0,212.25199999999998
+Benzyl acetate,Negative,cc(=o)occ1c=cc=cc=1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+Benzyl alcohol,Negative,occ1c=cc=cc=1,cc1ccccc1,1.99502,cc1ccccc1,0.0,C7H8,0.0,0.0,7.0,7.0,0.0,92.14099999999999
+Benzyl benzoate,Negative,o=c(occ1c=cc=cc=1)c1c=cc=cc=1,o=c(no)c(c1ccccc1)c1ccccc1,2.3239,o=c(no)c(c1ccccc1)c1ccccc1,49.33,C14H13NO2,2.0,2.0,17.0,18.0,3.0,227.263
+Benzyl butyrate,Negative,cccc(=o)occ1c=cc=cc=1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+Benzyl cinnamate,Negative,o=c(c=cc1c=cc=cc=1)occ1c=cc=cc=1,o=c(/c=c/c1ccccc1)occ1ccccc1,3.443200000000002,o=c(/c=c/c1ccccc1)occ1ccccc1,26.3,C16H14O2,2.0,0.0,18.0,19.0,4.0,238.286
+Benzyl formate,Negative,o=cocc1c=cc=cc=1,o=cncc1ccccc1,0.9325999999999999,o=cncc1ccccc1,29.1,C8H9NO,1.0,1.0,10.0,10.0,3.0,135.16599999999997
+Benzyl formate,Negative,o=cocc1c=cc=cc=1,o=cncc1ccccc1,1.3127,o=cncc1ccccc1,29.1,C8H15NO,1.0,1.0,10.0,10.0,3.0,141.214
+Benzyl propionate,Negative,ccc(=o)occ1c=cc=cc=1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+Benzyl valerate,Negative,ccccc(=o)occ1c=cc=cc=1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+Betaine,Negative,c[n+](c)(c)cc(=o)[o-],c[n+](c)(c)nccc(=o)[o-],-1.6627999999999987,c[n+](c)(c)nccc(=o)[o-],52.16,C6H14N2O2,3.0,1.0,10.0,9.0,4.0,146.19
+Butyl 4-hydroxybenzoate,Negative,ccccoc(=o)c1c=cc(o)=cc=1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+Butyl acetate,Negative,ccccoc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+Butyl cinnamate,Not determined,ccccoc(=o)c=cc1c=cc=cc=1,ccccc(=o)/c=c/c1cccc(o)c1o,2.870300000000002,ccccc(=o)/c=c/c1cccc(o)c1o,57.53,C13H16O3,3.0,2.0,16.0,16.0,5.0,220.268
+Butyl dec-2-enoate,Negative,cccccccc=cc(=o)occcc,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Butyl decanoate,Not determined,cccccccccc(=o)occcc,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Butyl hexadecanoate,Not determined,cccccccccccccccc(=o)occcc,ccccccccccccccc1(c(=o)oc)co1,5.019600000000004,ccccccccccccccc1(c(=o)oc)co1,38.83,C18H34O3,3.0,0.0,21.0,21.0,14.0,298.467
+Caprolactone,Negative,o=c1ccccco1,o=cncc1ccccc1,0.9325999999999999,o=cncc1ccccc1,29.1,C8H9NO,1.0,1.0,10.0,10.0,3.0,135.16599999999997
+Caprolactone,Negative,o=c1ccccco1,o=cncc1ccccc1,1.3127,o=cncc1ccccc1,29.1,C8H15NO,1.0,1.0,10.0,10.0,3.0,141.214
+Choline,No data,c[n+](c)(c)cco,c[n+](c)(c)ccoc(n)=o,-0.2121000000000003,c[n+](c)(c)ccoc(n)=o,52.32,C6H15N2O2+,2.0,1.0,10.0,9.0,3.0,147.19799999999998
+Cinnamaldehyde,Negative,o=cc=cc1c=cc=cc=1,o=cncc1ccccc1,0.9325999999999999,o=cncc1ccccc1,29.1,C8H9NO,1.0,1.0,10.0,10.0,3.0,135.16599999999997
+Cinnamaldehyde,Negative,o=cc=cc1c=cc=cc=1,o=cncc1ccccc1,1.3127,o=cncc1ccccc1,29.1,C8H15NO,1.0,1.0,10.0,10.0,3.0,141.214
+Cinnamic acid,Not determined,o=c(o)c=cc1c=cc=cc=1,o=c(o)cc1ccccc1o,1.0192999999999999,o=c(o)cc1ccccc1o,57.53,C8H8O3,2.0,2.0,11.0,11.0,2.0,152.14899999999997
+Citral,Negative,cc(c)=cccc(c)=cc=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+Citric acid,No data,o=c(o)cc(o)(cc(=o)o)c(=o)o,o=c([o-])cc(o)(cc(=o)[o-])c(=o)[o-],-5.252599999999999,o=c([o-])cc(o)(cc(=o)[o-])c(=o)[o-],140.62,C6H5O7-3,7.0,1.0,13.0,12.0,5.0,189.09899999999996
+Citronellal,Negative,cc(c)=cccc(c)cc=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+Citronellic acid,Negative,cc(c)=cccc(c)cc(=o)o,nc(n)=ncccc(cs)c(=o)o,-0.3294000000000004,nc(n)=ncccc(cs)c(=o)o,101.70000000000002,C7H15N3O2S,3.0,4.0,13.0,12.0,6.0,205.283
+Citronellol,Negative,cc(c)=cccc(c)cco,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+Citronellyl dodecanoate,Negative,cccccccccccc(=o)occc(c)ccc=c(c)c,ccccccccccccc(=o)nc(cccc)ccc(=o)o,5.8372000000000055,ccccccccccccc(=o)nc(cccc)ccc(=o)o,66.4,C21H41NO3,2.0,2.0,25.0,24.0,18.0,355.56300000000016
+Cyclohexane,Negative,c1ccccc1,cc1ccccc1,1.99502,cc1ccccc1,0.0,C7H8,0.0,0.0,7.0,7.0,0.0,92.14099999999999
+Cyclohexanecarboxylic acid,Not determined,o=c(o)c1ccccc1,o=c(o)c1ccccc1o,1.0903999999999998,o=c(o)c1ccccc1o,57.53,C7H6O3,2.0,2.0,10.0,10.0,1.0,138.12199999999999
+Cyclohexanol,Ambiguous,oc1ccccc1,cc1ccccc1,1.99502,cc1ccccc1,0.0,C7H8,0.0,0.0,7.0,7.0,0.0,92.14099999999999
+Cyclohexanone,Ambiguous,o=c1ccccc1,o=cncc1ccccc1,0.9325999999999999,o=cncc1ccccc1,29.1,C8H9NO,1.0,1.0,10.0,10.0,3.0,135.16599999999997
+Cyclohexanone,Ambiguous,o=c1ccccc1,o=cncc1ccccc1,1.3127,o=cncc1ccccc1,29.1,C8H15NO,1.0,1.0,10.0,10.0,3.0,141.214
+Cyclohexyl acetate,Negative,cc(=o)oc1ccccc1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+Cyclohexyl butyrate,Negative,cccc(=o)oc1ccccc1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+Cyclohexyl formate,Negative,o=coc1ccccc1,o=c(o)c1ccccc1o,1.0903999999999998,o=c(o)c1ccccc1o,57.53,C7H6O3,2.0,2.0,10.0,10.0,1.0,138.12199999999999
+Cyclohexyl isovalerate,Negative,cc(c)cc(=o)oc1ccccc1,ccn(cc)cc(=o)nc1c(c)cccc1c,2.5837400000000006,ccn(cc)cc(=o)nc1c(c)cccc1c,32.34,C14H22N2O,2.0,1.0,17.0,17.0,5.0,234.343
+Cyclohexyl propionate,Negative,ccc(=o)oc1ccccc1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+Cyclohexylacetic acid,Not determined,o=c(o)cc1ccccc1,o=c(o)cc1ccccc1o,1.0192999999999999,o=c(o)cc1ccccc1o,57.53,C8H8O3,2.0,2.0,11.0,11.0,2.0,152.14899999999997
+Cyclopentanethiol,No data,sc1cccc1,cc1ccccc1,1.99502,cc1ccccc1,0.0,C7H8,0.0,0.0,7.0,7.0,0.0,92.14099999999999
+Cyclopentanol,Negative,oc1cccc1,o=cc1cccnc1,0.8940999999999999,o=cc1cccnc1,29.96,C6H5NO,2.0,0.0,8.0,8.0,1.0,107.11199999999998
+Cyclopentanone,Negative,o=c1cccc1,o=cc1cccnc1,0.8940999999999999,o=cc1cccnc1,29.96,C6H5NO,2.0,0.0,8.0,8.0,1.0,107.11199999999998
+"D,L-Lysine",Negative,nccccc(n)c(=o)o,ncco/c=c/c(n)c(=o)o,-1.112699999999999,ncco/c=c/c(n)c(=o)o,98.57,C6H12N2O3,4.0,3.0,11.0,10.0,5.0,160.17299999999997
+Dec-1-en-3-ol,Ambiguous,c=cc(o)ccccccc,o=c(o)cc1ccccc1o,1.0192999999999999,o=c(o)cc1ccccc1o,57.53,C8H8O3,2.0,2.0,11.0,11.0,2.0,152.14899999999997
+Dec-2-en-1-ol,Ambiguous,cccccccc=cco,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+Dec-2-enal,Ambiguous,cccccccc=cc=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+Dec-2-enoic acid,Negative,cccccccc=cc(=o)o,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Dec-3-en-2-one,Ambiguous,ccccccc=cc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+Dec-3-enoic acid,Negative,ccccccc=ccc(=o)o,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Dec-4-enoic acid,Negative,cccccc=cccc(=o)o,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Dec-9-enal,Negative,c=ccccccccc=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+"Deca-(2E,4E)-dienoic acid isobutyl-amide",Negative,ccccc/c=c/c=c/c(=o)ncc(c)c,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+"Deca-2,4-dien-1-ol",Ambiguous,cccccc=cc=cco,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+Decan-2-one,Negative,ccccccccc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+Decan-3-one,Negative,cccccccc(=o)cc,cccccccp(=o)(o)occ,3.178700000000002,cccccccp(=o)(o)occ,46.53,C9H21O3P,2.0,1.0,13.0,12.0,8.0,208.23799999999997
+"Decano-1,4-lactone",No data,ccccccc1ccc(=o)o1,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+"Decano-1,5-lactone",No data,cccccc1cccc(=o)o1,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Decyl 3-methylbutyrate,Not determined,ccccccccccoc(=o)cc(c)c,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Diallyl disulfide,No data,c=ccsscc=c,c=ccss(=o)cc=c,1.7553,c=ccss(=o)cc=c,17.07,C6H10OS2,2.0,0.0,9.0,8.0,5.0,162.27899999999997
+Diallyl trisulfide,Not determined,c=ccssscc=c,c=ccss(=o)cc=c,1.7553,c=ccss(=o)cc=c,17.07,C6H10OS2,2.0,0.0,9.0,8.0,5.0,162.27899999999997
+Dibutyl sulfide,No data,ccccscccc,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+Dicyclohexyl disulfide,Not determined,c1ccc(ssc2ccccc2)cc1,c1cncc(c2cc3ccc2n3)c1,1.6894999999999998,c1cncc(c2cc3ccc2n3)c1,24.92,C11H14N2,2.0,1.0,13.0,15.0,1.0,174.247
+Diethyl citrate,Negative,ccoc(=o)cc(o)(cc(=o)occ)c(=o)[o-],o=c([o-])cc(o)(cc(=o)[o-])c(=o)[o-],-5.252599999999999,o=c([o-])cc(o)(cc(=o)[o-])c(=o)[o-],140.62,C6H5O7-3,7.0,1.0,13.0,12.0,5.0,189.09899999999996
+Diethyl nonanedioate,Negative,ccoc(=o)cccccccc(=o)occ,ccccccc=cc(=o)ccccccc(=o)occ,4.985800000000005,ccccccc=cc(=o)ccccccc(=o)occ,43.370000000000005,C18H32O3,3.0,0.0,21.0,20.0,14.0,296.45099999999996
+Dihydrocapsiate,Negative,coc1c=c(coc(=o)ccccccc(c)c)c=cc=1o,coc1cc(cnc(=o)cccc/c=c/c(c)c)ccc1o,3.789600000000003,coc1cc(cnc(=o)cccc/c=c/c(c)c)ccc1o,58.56,C18H27NO3,3.0,2.0,22.0,22.0,9.0,305.418
+Dilauroyl peroxide,Negative,cccccccccccc(=o)ooc(=o)ccccccccccc,cccccccccccccccc(=o)oc1cccc(oc(=o)ncccccccc)c1,9.5222,cccccccccccccccc(=o)oc1cccc(oc(=o)ncccccccc)c1,64.63,C31H53NO4,4.0,1.0,36.0,36.0,23.0,503.76800000000037
+"Dimethyl-3,6-benzo-2(3H)-furanone",Negative,cc1c=cc2c(c)c(=o)oc=2c=1,ccn(cc)c1ccc2c(c)cc(=o)oc2c1,2.9476200000000015,ccn(cc)c1ccc2c(c)cc(=o)oc2c1,33.45,C14H17NO2,3.0,0.0,17.0,18.0,3.0,231.29499999999996
+Dioctyl adipate,Not determined,ccccccccoc(=o)ccccc(=o)occcccccc,ccccccc=cc(=o)ccccccc(=o)occ,4.985800000000005,ccccccc=cc(=o)ccccccc(=o)occ,43.370000000000005,C18H32O3,3.0,0.0,21.0,20.0,14.0,296.45099999999996
+Docosahexaenoic acid,No data,cccccccccc=cc=cc=cc=cc=cc=cc(=o)o,cccccccccccccccc1cccc(o)c1c(=o)o,6.724100000000008,cccccccccccccccc1cccc(o)c1c(=o)o,57.53,C22H36O3,2.0,2.0,25.0,25.0,15.0,348.52700000000004
+"Dodec-2-eno-1,5-lactone",Not determined,cccccccc1cc=cc(=o)o1,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Dodecan-2-ol,Negative,ccccccccccc(c)o,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Dodecan-2-one,Negative,ccccccccccc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+Dodecanal,Negative,cccccccccccc=o,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+"Dodecano-1,4-lactone",No data,ccccccccc1ccc(=o)o1,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+"Dodecano-1,5-lactone",No data,cccccccc1cccc(=o)o1,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Dodecyl gallate,Negative,ccccccccccccoc(=o)c1c=c(o)c(o)=c(o)c=1,ccccccccoc(=o)c1cc(o)c(o)c(o)c1,3.320700000000003,ccccccccoc(=o)c1cc(o)c(o)c(o)c1,86.99000000000001,C15H22O5,5.0,3.0,20.0,20.0,8.0,282.336
+Dodecyldimethylamine,Negative,ccccccccccccn(c)c,ccccccccccccccc(co)ncc,5.0480000000000045,ccccccccccccccc(co)ncc,32.26,C18H39NO,2.0,2.0,20.0,19.0,16.0,285.516
+Erucic acid,Not determined,cccccccc/c=c\cccccccccccc(=o)o,cccccccc/c=c\cccccccc(=o)[o-],4.773800000000004,cccccccc/c=c\cccccccc(=o)[o-],40.129999999999995,C18H33O2-,2.0,0.0,20.0,19.0,15.0,281.4599999999999
+Ethyl (3-hydroxyphenyl)carbamate,No data,ccoc(=o)nc1c=cc=c(o)c=1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+Ethyl 2-hydroxy-4-methylbenzoate,Negative,ccoc(=o)c1c=cc(c)=cc=1o,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+Ethyl 2-nonynoate,Negative,ccccccc#cc(=o)occ,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Ethyl 4-hydroxybenzoate,Ambiguous,ccoc(=o)c1c=cc(o)=cc=1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+Ethyl 4-methoxybenzoate,Negative,ccoc(=o)c1c=cc(oc)=cc=1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+Ethyl acrylate,Negative,c=cc(=o)occ,c=ccss(=o)cc=c,1.7553,c=ccss(=o)cc=c,17.07,C6H10OS2,2.0,0.0,9.0,8.0,5.0,162.27899999999997
+Ethyl cyclohexanecarboxylate,Negative,ccoc(=o)c1ccccc1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+Ethyl cyclohexanepropionate,Negative,ccoc(=o)ccc1ccccc1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+Ethyl cyclohexyl acetate,Not determined,ccoc(=o)cc1ccccc1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+Ethyl dodec-(2E)-enoate,Negative,ccccccccc/c=c/c(=o)occ,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Ethyl hept-(2E)-enoate,Negative,cccc/c=c/c(=o)occ,cccccccp(=o)(o)occ,3.178700000000002,cccccccp(=o)(o)occ,46.53,C9H21O3P,2.0,1.0,13.0,12.0,8.0,208.23799999999997
+Ethyl heptanoate,Negative,ccccccc(=o)occ,cccccccp(=o)(o)occ,3.178700000000002,cccccccp(=o)(o)occ,46.53,C9H21O3P,2.0,1.0,13.0,12.0,8.0,208.23799999999997
+Ethyl hex-3-enoate,No data,ccc=ccc(=o)occ,cccccccp(=o)(o)occ,3.178700000000002,cccccccp(=o)(o)occ,46.53,C9H21O3P,2.0,1.0,13.0,12.0,8.0,208.23799999999997
+Ethyl oct-3-enoate,Negative,ccccc=ccc(=o)occ,cccccccp(=o)(o)occ,3.178700000000002,cccccccp(=o)(o)occ,46.53,C9H21O3P,2.0,1.0,13.0,12.0,8.0,208.23799999999997
+Ethyl oleate,No data,cccccccc/c=c\cccccccc(=o)occ,cccccccc/c=c\cccccccc(=o)[o-],4.773800000000004,cccccccc/c=c\cccccccc(=o)[o-],40.129999999999995,C18H33O2-,2.0,0.0,20.0,19.0,15.0,281.4599999999999
+Ethyl pentadecanoate,Not determined,ccccccccccccccc(=o)occ,ccccccccccccccc(co)ncc,5.0480000000000045,ccccccccccccccc(co)ncc,32.26,C18H39NO,2.0,2.0,20.0,19.0,16.0,285.516
+Ethyl phenylacetate,Not determined,ccoc(=o)cc1c=cc=cc=1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+Ethyl vanillate,Negative,ccoc(=o)c1c=cc(o)=c(oc)c=1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+Ethylene glycol dipalmitate,Negative,cccccccccccccccc(=o)occoc(=o)ccccccccccccccc,cccccccccccccccc(=o)oc1cccc(oc(=o)ncccccccc)c1,9.5222,cccccccccccccccc(=o)oc1cccc(oc(=o)ncccccccc)c1,64.63,C31H53NO4,4.0,1.0,36.0,36.0,23.0,503.76800000000037
+Farnesal,Negative,cc(c)=ccc/c(c)=c/cc/c(c)=c/c=o,cc(c)=ccc/c(c)=c/cc/c(c)=c/coc(=o)c(n)cc(=o)o,3.750800000000001,cc(c)=ccc/c(c)=c/cc/c(c)=c/coc(=o)c(n)cc(=o)o,89.62,C19H31NO4,4.0,2.0,24.0,23.0,11.0,337.46000000000004
+Fenpropidin,Negative,cc(cc1c=cc(c(c)(c)c)=cc=1)cn1ccccc1,cc(cc1ccc(c(c)(c)c)cc1)cn1ccccc1,4.6486000000000045,cc(cc1ccc(c(c)(c)c)cc1)cn1ccccc1,3.24,C19H31N,1.0,0.0,20.0,21.0,4.0,273.464
+"Furan-2,5-dicarboxylic acid",Negative,o=c(o)c1oc(c(=o)o)=cc=1,o=c(o)c1ccnc(c(=o)o)c1,0.478,o=c(o)c1ccnc(c(=o)o)c1,87.49000000000001,C7H5NO4,3.0,2.0,12.0,12.0,2.0,167.11999999999998
+Gallic acid,Negative,o=c(o)c1c=c(o)c(o)=c(o)c=1,o=c(o)c1cc(o)c(o)c(o)c1,0.5015999999999998,o=c(o)c1cc(o)c(o)c(o)c1,97.99000000000001,C7H6O5,4.0,4.0,12.0,12.0,1.0,170.11999999999998
+Glutaric acid,Negative,o=c(o)cccc(=o)o,o=cn(o)cccp(=o)(o)o,-0.5982000000000002,o=cn(o)cccp(=o)(o)o,98.07,C4H10NO5P,3.0,3.0,11.0,10.0,5.0,183.10000000000002
+Glyceryl 5-hydroxydodecanoate,Not determined,cccccccc(o)cccc(=o)occ(o)co,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Glyphosate,Negative,o=c(o)cncp(=o)(o)o,o=cn(o)cccp(=o)(o)o,-0.5982000000000002,o=cn(o)cccp(=o)(o)o,98.07,C4H10NO5P,3.0,3.0,11.0,10.0,5.0,183.10000000000002
+Hept-2-en-4-one,Ambiguous,cc=cc(=o)ccc,c=ccss(=o)cc=c,1.7553,c=ccss(=o)cc=c,17.07,C6H10OS2,2.0,0.0,9.0,8.0,5.0,162.27899999999997
+Hept-2-enoic acid,Negative,ccccc=cc(=o)o,ccccccb(o)o,1.0394999999999999,ccccccb(o)o,40.46,C6H15BO2,2.0,2.0,9.0,8.0,5.0,129.996
+Hept-2-enyl acetate,Ambiguous,ccccc=ccoc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+Hept-2-enyl isovalerate,Ambiguous,ccccc=ccoc(=o)cc(c)c,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Hept-3-en-1-ol,Negative,cccc=ccco,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+Hept-3-en-2-one,Ambiguous,cccc=cc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+"Hepta-2,4-dienal",Ambiguous,ccc=cc=cc=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+Heptadecan-1-ol,Not determined,ccccccccccccccccco,ccccccccccccccc(co)ncc,5.0480000000000045,ccccccccccccccc(co)ncc,32.26,C18H39NO,2.0,2.0,20.0,19.0,16.0,285.516
+Heptadecan-2-one,Negative,cccccccccccccccc(c)=o,ccccccccccccccc(co)ncc,5.0480000000000045,ccccccccccccccc(co)ncc,32.26,C18H39NO,2.0,2.0,20.0,19.0,16.0,285.516
+Heptan-2-one,Ambiguous,cccccc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+"Heptano-1,4-lactone",No data,cccc1ccc(=o)o1,ccccccb(o)o,1.0394999999999999,ccccccb(o)o,40.46,C6H15BO2,2.0,2.0,9.0,8.0,5.0,129.996
+"Heptano-1,5-lactone",Negative,ccc1cccc(=o)o1,cc1ccsc1c(=o)o,1.75472,cc1ccsc1c(=o)o,37.3,C6H6O2S,2.0,1.0,9.0,9.0,1.0,142.179
+Heptyl 2-methylbutyrate,Not determined,cccccccoc(=o)c(c)cc,cccccccp(=o)(o)occ,3.178700000000002,cccccccp(=o)(o)occ,46.53,C9H21O3P,2.0,1.0,13.0,12.0,8.0,208.23799999999997
+Heptyl acetate,No data,cccccccoc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+Heptyl isovalerate,Not determined,cccccccoc(=o)cc(c)c,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Hex-1-en-3-ol,Ambiguous,c=cc(o)ccc,c=ccss(=o)cc=c,1.7553,c=ccss(=o)cc=c,17.07,C6H10OS2,2.0,0.0,9.0,8.0,5.0,162.27899999999997
+Hex-1-en-3-one,Ambiguous,c=cc(=o)ccc,c=ccss(=o)cc=c,1.7553,c=ccss(=o)cc=c,17.07,C6H10OS2,2.0,0.0,9.0,8.0,5.0,162.27899999999997
+Hex-2-enyl formate,Ambiguous,cccc=ccoc=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+Hex-2-enyl hexanoate,Ambiguous,cccc=ccoc(=o)ccccc,ccc/c=c1/oc(=o)c2ccccc12,2.998000000000001,ccc/c=c1/oc(=o)c2ccccc12,26.3,C12H12O2,2.0,0.0,14.0,15.0,2.0,188.226
+Hex-5-en-2-one,Negative,c=cccc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+"Hexa-2,4-dienyl acetate",Ambiguous,cc=cc=ccoc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+Hexadec-1-yl acetate,Not determined,ccccccccccccccccoc(c)=o,ccccccccccccccc(co)ncc,5.0480000000000045,ccccccccccccccc(co)ncc,32.26,C18H39NO,2.0,2.0,20.0,19.0,16.0,285.516
+Hexadecanal,Not determined,cccccccccccccccc=o,ccccccccccccccc(co)ncc,5.0480000000000045,ccccccccccccccc(co)ncc,32.26,C18H39NO,2.0,2.0,20.0,19.0,16.0,285.516
+"Hexadecano-1,4-lactone",Negative,ccccccccccccc1ccc(=o)o1,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+"Hexadecano-1,5-lactone",Negative,cccccccccccc1cccc(=o)o1,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+"Hexano-1,4-lactone",No data,ccc1ccc(=o)o1,ccccccb(o)o,1.0394999999999999,ccccccb(o)o,40.46,C6H15BO2,2.0,2.0,9.0,8.0,5.0,129.996
+Hexyl 2-methylbutyrate,No data,ccccccoc(=o)c(c)cc,cccccccp(=o)(o)occ,3.178700000000002,cccccccp(=o)(o)occ,46.53,C9H21O3P,2.0,1.0,13.0,12.0,8.0,208.23799999999997
+Hexyl acetate,No data,ccccccoc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+Hexyl dodecanoate,Not determined,cccccccccccc(=o)occcccc,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Hexyl isobutyrate,No data,ccccccoc(=o)c(c)c,cccccccp(=o)(o)occ,3.178700000000002,cccccccp(=o)(o)occ,46.53,C9H21O3P,2.0,1.0,13.0,12.0,8.0,208.23799999999997
+Hexyl lactate,Negative,ccccccoc(=o)c(c)o,cccccccp(=o)(o)occ,3.178700000000002,cccccccp(=o)(o)occ,46.53,C9H21O3P,2.0,1.0,13.0,12.0,8.0,208.23799999999997
+Hexyl tetradecanoate,Not determined,cccccccccccccc(=o)occcccc,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Hymexazol,Negative,cc1onc(=o)c=1,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+Imidazolidin-2-one,Negative,o=c1nccn1,o=cc1cccnc1,0.8940999999999999,o=cc1cccnc1,29.96,C6H5NO,2.0,0.0,8.0,8.0,1.0,107.11199999999998
+Inositol,No data,oc1c(o)c(o)c(o)c(o)c1o,o=c(o)c1cc(o)c(o)c(o)c1,0.5015999999999998,o=c(o)c1cc(o)c(o)c(o)c1,97.99000000000001,C7H6O5,4.0,4.0,12.0,12.0,1.0,170.11999999999998
+Isobutyl anthranilate,Not determined,cc(c)coc(=o)c1c(n)=cc=cc=1,ccn(cc)cc(=o)nc1c(c)cccc1c,2.5837400000000006,ccn(cc)cc(=o)nc1c(c)cccc1c,32.34,C14H22N2O,2.0,1.0,17.0,17.0,5.0,234.343
+Isobutyl decanoate,Not determined,cccccccccc(=o)occ(c)c,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Isobutyl dodecanoate,Not determined,cccccccccccc(=o)occ(c)c,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Isobutyl hexadecanoate,Not determined,cccccccccccccccc(=o)occ(c)c,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Isobutyl octadecanoate,Not determined,cccccccccccccccccc(=o)occ(c)c,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Isobutyl octanoate,Not determined,cccccccc(=o)occ(c)c,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Isobutyl salicylate,Negative,cc(c)coc(=o)c1c(o)=cc=cc=1,ccn(cc)cc(=o)nc1c(c)cccc1c,2.5837400000000006,ccn(cc)cc(=o)nc1c(c)cccc1c,32.34,C14H22N2O,2.0,1.0,17.0,17.0,5.0,234.343
+Isobutyl tetradecanoate,Not determined,cccccccccccccc(=o)occ(c)c,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Isopentyl acetate,Negative,cc(=o)occc(c)c,cc(=o)occ[n+](c)(c)c,0.25570000000000004,cc(=o)occ[n+](c)(c)c,26.3,C7H16NO2+,2.0,0.0,10.0,9.0,3.0,146.21
+Isopentyl decanoate,Not determined,cccccccccc(=o)occc(c)c,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Isopentyl hexadecanoate,Not determined,cccccccccccccccc(=o)occc(c)c,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Isopentyl tetradecanoate,Not determined,cccccccccccccc(=o)occc(c)c,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Isopropyl decanoate,Negative,cccccccccc(=o)oc(c)c,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Isopropyl dodecanoate,Negative,cccccccccccc(=o)oc(c)c,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Isopropyl hexadecanoate,Negative,cccccccccccccccc(=o)oc(c)c,ccccccccccccccc1(c(=o)oc)co1,5.019600000000004,ccccccccccccccc1(c(=o)oc)co1,38.83,C18H34O3,3.0,0.0,21.0,21.0,14.0,298.467
+Isopropyl tetradecanoate,Ambiguous,cccccccccccccc(=o)oc(c)c,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Lenacil,Negative,o=c1nc2cccc=2c(=o)n1c1ccccc1,o=c1c2ccccc2sn1-c1ccccc1,3.052200000000001,o=c1c2ccccc2sn1-c1ccccc1,22.0,C13H9NOS,3.0,0.0,16.0,18.0,1.0,227.288
+Leucomalachite Green,Positive,cn(c)c1c=cc(c(c2c=cc=cc=2)c2c=cc(n(c)c)=cc=2)=cc=1,cn(c)c1ccc(c(=c2c=cc(=[n+](c)c)c=c2)c2ccc(n(c)c)cc2)cc1,4.459600000000004,cn(c)c1ccc(c(=c2c=cc(=[n+](c)c)c=c2)c2ccc(n(c)c)cc2)cc1,9.49,C25H30N3+,2.0,0.0,28.0,30.0,4.0,372.53600000000006
+Limonene,Negative,c=c(c)c1cc=c(c)cc1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+Maleic anhydride,No data,o=c1c=cc(=o)o1,o=c1ccc(=o)n1,-0.577,o=c1ccc(=o)n1,46.17,C4H5NO2,2.0,1.0,7.0,7.0,0.0,99.089
+Malic acid,No data,o=c(o)cc(o)c(=o)o,o=c(o)cnc(=o)c(=o)o,-1.7282000000000002,o=c(o)cnc(=o)c(=o)o,103.70000000000002,C4H5NO5,3.0,3.0,10.0,9.0,2.0,147.08599999999998
+Malonic acid,Negative,o=c(o)cc(=o)o,o=cn(o)cccp(=o)(o)o,-0.5982000000000002,o=cn(o)cccp(=o)(o)o,98.07,C4H10NO5P,3.0,3.0,11.0,10.0,5.0,183.10000000000002
+Maltol,Ambiguous,cc1oc=cc(=o)c=1o,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+Menthyl acetate,Not determined,cc(=o)oc1cc(c)ccc1c(c)c,c=ccc1cc(oc)ccc1oc(c)c,3.2109000000000023,c=ccc1cc(oc)ccc1oc(c)c,18.46,C13H18O2,2.0,0.0,15.0,15.0,5.0,206.28499999999997
+"Methacrylic acid, 2-sulphoethyl ester",Negative,c=c(c)c(=o)occs(=o)(=o)o,o=c(o)c(=o)cs(=o)(=o)o,-1.4720999999999997,o=c(o)c(=o)cs(=o)(=o)o,108.73999999999998,C3H4O6S,4.0,2.0,10.0,9.0,3.0,168.126
+Methoxyfenozide,Negative,coc1c(c)=c(c(=o)nn(c(=o)c2c=c(c)c=c(c)c=2)c(c)(c)c)c=cc=1,ccc1ccc(c(=o)nn(c(=o)c2cc(c)cc(c)c2)c(c)(c)c)cc1,4.451540000000004,ccc1ccc(c(=o)nn(c(=o)c2cc(c)cc(c)c2)c(c)(c)c)cc1,49.410000000000004,C22H28N2O2,2.0,1.0,26.0,27.0,3.0,352.4780000000001
+Methyl 2-methylvalerate,No data,cccc(c)c(=o)oc,ccccccb(o)o,1.0394999999999999,ccccccb(o)o,40.46,C6H15BO2,2.0,2.0,9.0,8.0,5.0,129.996
+Methyl 2-nonynoate,Negative,ccccccc#cc(=o)oc,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Methyl 2-octynoate,Negative,cccccc#cc(=o)oc,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Methyl 2-undecynoate,Negative,ccccccccc#cc(=o)oc,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Methyl 4-methylbenzoate,Negative,coc(=o)c1c=cc(c)=cc=1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+Methyl 5-hydroxydecanoate,Negative,cccccc(o)cccc(=o)oc,ccccccc=cc(=o)ccccccc(=o)occ,4.985800000000005,ccccccc=cc(=o)ccccccc(=o)occ,43.370000000000005,C18H32O3,3.0,0.0,21.0,20.0,14.0,296.45099999999996
+Methyl cyclohexanecarboxylate,Not determined,coc(=o)c1ccccc1,o=c(o)c1ccccc1o,1.0903999999999998,o=c(o)c1ccccc1o,57.53,C7H6O3,2.0,2.0,10.0,10.0,1.0,138.12199999999999
+Methyl dec-2-enoate,Negative,cccccccc=cc(=o)oc,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Methyl dodec-(2E)-enoate,Negative,ccccccccc/c=c/c(=o)oc,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Methyl eugenol,Positive,c=ccc1c=c(oc)c(o)=c(c)c=1,c=ccc1cc(oc)ccc1oc(c)c,3.2109000000000023,c=ccc1cc(oc)ccc1oc(c)c,18.46,C13H18O2,2.0,0.0,15.0,15.0,5.0,206.28499999999997
+Methyl hex-2-enoate,Negative,cccc=cc(=o)oc,ccccccb(o)o,1.0394999999999999,ccccccb(o)o,40.46,C6H15BO2,2.0,2.0,9.0,8.0,5.0,129.996
+Methyl hexadecanoate,Not determined,cccccccccccccccc(=o)oc,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Methyl nicotinate,Negative,coc(=o)c1c=cc=nc=1,o=c(o)c1cccnc1,0.07060000000000005,o=c(o)c1cccnc1,49.33,C6H11NO2,2.0,2.0,9.0,9.0,1.0,129.15900000000002
+Methyl nonyl ketone,Negative,cccccccccc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+Methyl octadecanoate,Not determined,cccccccccccccccccc(=o)oc,cccccccc/c=c\cccccccc(=o)[o-],4.773800000000004,cccccccc/c=c\cccccccc(=o)[o-],40.129999999999995,C18H33O2-,2.0,0.0,20.0,19.0,15.0,281.4599999999999
+Methyl oleate,Negative,cccccccc/c=c\cccccccc(=o)oc,cccccccc/c=c\cccccccc(=o)[o-],4.773800000000004,cccccccc/c=c\cccccccc(=o)[o-],40.129999999999995,C18H33O2-,2.0,0.0,20.0,19.0,15.0,281.4599999999999
+Methyl p-tert-butylphenylacetate,Not determined,coc(=o)cc1c=cc(c(c)(c)c)=cc=1,ccccnnc(=o)c1ccc(c(c)(c)c)cc1,3.018600000000002,ccccnnc(=o)c1ccc(c(c)(c)c)cc1,41.129999999999995,C15H24N2O,2.0,2.0,18.0,18.0,5.0,248.36999999999998
+Methyl paraben,Negative,coc(=o)c1c=cc(o)=cc=1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+Methyl phenyl sulfide,Negative,csc1c=cc=cc=1,cc1ccccc1,1.99502,cc1ccccc1,0.0,C7H8,0.0,0.0,7.0,7.0,0.0,92.14099999999999
+Methyl phenylacetate,Negative,coc(=o)cc1c=cc=cc=1,o=c(o)cc1ccccc1o,1.0192999999999999,o=c(o)cc1ccccc1o,57.53,C8H8O3,2.0,2.0,11.0,11.0,2.0,152.14899999999997
+Methyl-2-oxo-propyl disulfide,Not determined,ccc(=o)csscc(=o)cc,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+Moniliformin,Not determined,o=c1c=c(o)c1=o,oc1cccc(o)c1o,0.8033999999999997,oc1cccc(o)c1o,60.69,C6H6O3,3.0,3.0,9.0,9.0,0.0,126.11099999999998
+"N,N''-1,3-Propanediylbis(N'-octadecylurea)",Negative,ccccccccccccccccccnc(=o)ncccnc(=o)ncccccccccccccccccc,cccccccccccccccccc(=o)nc1ccc(s(=o)(=o)[o-])c(nc(=o)ccccccccccccccccc)c1,12.99069999999998,cccccccccccccccccc(=o)nc1ccc(s(=o)(=o)[o-])c(nc(=o)ccccccccccccccccc)c1,115.4,C42H75N2O5S-,5.0,2.0,50.0,50.0,35.0,720.1379999999999
+"N,N-Bis(2-hydroxyethyl)dodecanamide",Negative,cccccccccccc(=o)n(cco)cco,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+N-nitrosodibutylamine,Positive,ccccn(cccc)n=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+N-nitrosomethylaniline,Not determined,o=ncnc1c=cc=cc=1,o=cncc1ccccc1,0.9325999999999999,o=cncc1ccccc1,29.1,C8H9NO,1.0,1.0,10.0,10.0,3.0,135.16599999999997
+N-nitrosomethylaniline,Not determined,o=ncnc1c=cc=cc=1,o=cncc1ccccc1,1.3127,o=cncc1ccccc1,29.1,C8H15NO,1.0,1.0,10.0,10.0,3.0,141.214
+N-nitrosopiperidine,Positive,o=nn1ccccc1,o=cncc1ccccc1,0.9325999999999999,o=cncc1ccccc1,29.1,C8H9NO,1.0,1.0,10.0,10.0,3.0,135.16599999999997
+N-nitrosopiperidine,Positive,o=nn1ccccc1,o=cncc1ccccc1,1.3127,o=cncc1ccccc1,29.1,C8H15NO,1.0,1.0,10.0,10.0,3.0,141.214
+Nicotinamide,Negative,nc(=o)c1c=cc=nc=1,nnc(=o)c1ccncc1,-0.3149000000000006,nnc(=o)c1ccncc1,68.00999999999999,C6H7N3O,3.0,2.0,10.0,10.0,1.0,137.142
+Nicotinic acid,Negative,o=c(o)c1c=cc=nc=1,o=c(o)c1cccnc1,0.07060000000000005,o=c(o)c1cccnc1,49.33,C6H11NO2,2.0,2.0,9.0,9.0,1.0,129.15900000000002
+Non-2-en-4-one,Ambiguous,cc=cc(=o)ccccc,o=c1c=cc(=o)c2ccccc12,1.6218000000000001,o=c1c=cc(=o)c2ccccc12,34.14,C10H6O2,2.0,0.0,12.0,13.0,0.0,158.156
+Non-2-enal,Negative,ccccccc=cc=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+Non-2-enoic acid,Negative,ccccccc=cc(=o)o,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Non-3-en-2-one,Ambiguous,cccccc=cc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+Non-3-enoic acid,Negative,cccccc=ccc(=o)o,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+"Nona-2,4,6-trienal",Ambiguous,ccc=cc=cc=cc=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+"Nona-2,4-dienal",Ambiguous,ccccc=cc=cc=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+Nonan-2-one,Ambiguous,cccccccc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+Nonan-3-ol,Negative,ccccccc(o)cc,cccccccp(=o)(o)occ,3.178700000000002,cccccccp(=o)(o)occ,46.53,C9H21O3P,2.0,1.0,13.0,12.0,8.0,208.23799999999997
+Nonan-3-one,Ambiguous,ccccccc(=o)cc,cccccccp(=o)(o)occ,3.178700000000002,cccccccp(=o)(o)occ,46.53,C9H21O3P,2.0,1.0,13.0,12.0,8.0,208.23799999999997
+Nonan-3-yl acetate,Negative,ccccccc(cc)oc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+Nonanedioic acid,Negative,o=c(o)cccccccc(=o)o,o=c(o)c1cccc(c(=o)o)n1,0.47799999999999987,o=c(o)c1cccc(c(=o)o)n1,87.49000000000001,C7H5NO4,3.0,2.0,12.0,12.0,2.0,167.11999999999998
+"Nonano-1,5-lactone",No data,ccccc1cccc(=o)o1,cc1ccsc1c(=o)o,1.75472,cc1ccsc1c(=o)o,37.3,C6H6O2S,2.0,1.0,9.0,9.0,1.0,142.179
+Nonanoic acid,Negative,ccccccccc(=o)o,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Oct-1-en-3-one,Ambiguous,c=cc(=o)ccccc,c=ccss(=o)cc=c,1.7553,c=ccss(=o)cc=c,17.07,C6H10OS2,2.0,0.0,9.0,8.0,5.0,162.27899999999997
+Oct-2-en-1-ol,Ambiguous,cccccc=cco,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+Oct-2-en-4-one,Ambiguous,cc=cc(=o)cccc,c=ccss(=o)cc=c,1.7553,c=ccss(=o)cc=c,17.07,C6H10OS2,2.0,0.0,9.0,8.0,5.0,162.27899999999997
+Oct-2-enal,Ambiguous,cccccc=cc=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+Oct-2-enyl acetate,Ambiguous,cccccc=ccoc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+Oct-3-en-1-ol,Not determined,ccccc=ccco,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+Oct-3-en-2-ol,Ambiguous,ccccc=cc(c)o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+Oct-3-en-2-one,Ambiguous,ccccc=cc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+"Octa-1,5-dien-3-ol",Negative,c=cc(o)cc=ccc,c=ccss(=o)cc=c,1.7553,c=ccss(=o)cc=c,17.07,C6H10OS2,2.0,0.0,9.0,8.0,5.0,162.27899999999997
+"Octa-1,5-dien-3-one",Negative,c=cc(=o)cc=ccc,c=ccss(=o)cc=c,1.7553,c=ccss(=o)cc=c,17.07,C6H10OS2,2.0,0.0,9.0,8.0,5.0,162.27899999999997
+Octadecan-1-ol,Not determined,cccccccccccccccccco,ccccccccccccccc(co)ncc,5.0480000000000045,ccccccccccccccc(co)ncc,32.26,C18H39NO,2.0,2.0,20.0,19.0,16.0,285.516
+Octahydrocoumarin,Negative,o=c1ccc2ccccc2o1,nc1ccc2ccccc2n1,1.817,nc1ccc2ccccc2n1,38.91,C9H8N2,2.0,1.0,11.0,12.0,0.0,144.177
+Octan-2-ol,Ambiguous,ccccccc(c)o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+Octan-2-one,Ambiguous,ccccccc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+Octan-3-ol,Ambiguous,cccccc(o)cc,ccccccb(o)o,1.0394999999999999,ccccccb(o)o,40.46,C6H15BO2,2.0,2.0,9.0,8.0,5.0,129.996
+Octan-3-one,Ambiguous,cccccc(=o)cc,cccccccp(=o)(o)occ,3.178700000000002,cccccccp(=o)(o)occ,46.53,C9H21O3P,2.0,1.0,13.0,12.0,8.0,208.23799999999997
+Octan-3-yl formate,Negative,cccccc(cc)oc=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+"Octane-1,3-diol",Negative,cccccc(o)cco,ccccccb(o)o,1.0394999999999999,ccccccb(o)o,40.46,C6H15BO2,2.0,2.0,9.0,8.0,5.0,129.996
+"Octano-1,5-lactone",No data,cccc1cccc(=o)o1,cc1ccsc1c(=o)o,1.75472,cc1ccsc1c(=o)o,37.3,C6H6O2S,2.0,1.0,9.0,9.0,1.0,142.179
+Octyl gallate,Negative,ccccccccoc(=o)c1c=c(o)c(o)=c(o)c=1,ccccccccoc(=o)c1cc(o)c(o)c(o)c1,3.320700000000003,ccccccccoc(=o)c1cc(o)c(o)c(o)c1,86.99000000000001,C15H22O5,5.0,3.0,20.0,20.0,8.0,282.336
+Oleic acid,No data,cccccccc/c=c\cccccccc(=o)o,cccccccc/c=c\cccccccc(=o)[o-],4.773800000000004,cccccccc/c=c\cccccccc(=o)[o-],40.129999999999995,C18H33O2-,2.0,0.0,20.0,19.0,15.0,281.4599999999999
+Parathion-methyl,No data,cop(=s)(oc)oc1c=cc([n+](=o)[o-])=cc=1,ns(=o)(=o)c1ccc([n+](=o)[o-])cc1,0.2422000000000002,ns(=o)(=o)c1ccc([n+](=o)[o-])cc1,103.30000000000001,C6H6N2O4S,4.0,1.0,13.0,13.0,2.0,202.19099999999997
+Pent-1-en-3-one,Ambiguous,c=cc(=o)cc,c=ccss(=o)cc=c,1.7553,c=ccss(=o)cc=c,17.07,C6H10OS2,2.0,0.0,9.0,8.0,5.0,162.27899999999997
+Pentadecan-1-ol,Not determined,ccccccccccccccco,ccccccccccccccc(co)ncc,5.0480000000000045,ccccccccccccccc(co)ncc,32.26,C18H39NO,2.0,2.0,20.0,19.0,16.0,285.516
+Pentadecane,Not determined,ccccccccccccccc,ccccccccccccccc(co)ncc,5.0480000000000045,ccccccccccccccc(co)ncc,32.26,C18H39NO,2.0,2.0,20.0,19.0,16.0,285.516
+"Pentadecano-1,14-lactone",Negative,cc1ccccccccccccc(=o)o1,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+"Pentano-1,4-lactone",No data,cc1ccc(=o)o1,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+"Pentano-1,5-lactone",Negative,o=c1cccco1,o=cc1cccnc1,0.8940999999999999,o=cc1cccnc1,29.96,C6H5NO,2.0,0.0,8.0,8.0,1.0,107.11199999999998
+Pentyl 2-methylbutyrate,Not determined,cccccoc(=o)c(c)cc,cccccccp(=o)(o)occ,3.178700000000002,cccccccp(=o)(o)occ,46.53,C9H21O3P,2.0,1.0,13.0,12.0,8.0,208.23799999999997
+Pentyl dodecanoate,Not determined,cccccccccccc(=o)occccc,ccccccccccccnc(=o)ncc(c)c,4.862500000000003,ccccccccccccnc(=o)ncc(c)c,41.13,C17H36N2O,1.0,2.0,20.0,19.0,13.0,284.488
+Pentyl hexadecanoate,Not determined,cccccccccccccccc(=o)occccc,ccccccccccccccc1(c(=o)oc)co1,5.019600000000004,ccccccccccccccc1(c(=o)oc)co1,38.83,C18H34O3,3.0,0.0,21.0,21.0,14.0,298.467
+Phenethyl acetate,Not determined,cc(=o)occc1c=cc=cc=1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+Phenethyl benzoate,Negative,o=c(occc1c=cc=cc=1)c1c=cc=cc=1,o=c(no)c(c1ccccc1)c1ccccc1,2.3239,o=c(no)c(c1ccccc1)c1ccccc1,49.33,C14H13NO2,2.0,2.0,17.0,18.0,3.0,227.263
+Phenethyl butyrate,Not determined,cccc(=o)occc1c=cc=cc=1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+Phenethyl cinnamate,Not determined,o=c(c=cc1c=cc=cc=1)occc1c=cc=cc=1,o=c(/c=c/c1ccccc1)occ1ccccc1,3.443200000000002,o=c(/c=c/c1ccccc1)occ1ccccc1,26.3,C16H14O2,2.0,0.0,18.0,19.0,4.0,238.286
+Phenethyl formate,Not determined,o=coccc1c=cc=cc=1,o=cncc1ccccc1,0.9325999999999999,o=cncc1ccccc1,29.1,C8H9NO,1.0,1.0,10.0,10.0,3.0,135.16599999999997
+Phenethyl formate,Not determined,o=coccc1c=cc=cc=1,o=cncc1ccccc1,1.3127,o=cncc1ccccc1,29.1,C8H15NO,1.0,1.0,10.0,10.0,3.0,141.214
+Phenethyl propionate,Not determined,ccc(=o)occc1c=cc=cc=1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+Phenoxyacetic acid,Not determined,o=c(o)coc1c=cc=cc=1,o=c(o)cc1ccccc1o,1.0192999999999999,o=c(o)cc1ccccc1o,57.53,C8H8O3,2.0,2.0,11.0,11.0,2.0,152.14899999999997
+Phenylacetaldehyde,Not determined,o=ccc1c=cc=cc=1,o=cncc1ccccc1,0.9325999999999999,o=cncc1ccccc1,29.1,C8H9NO,1.0,1.0,10.0,10.0,3.0,135.16599999999997
+Phenylacetaldehyde,Not determined,o=ccc1c=cc=cc=1,o=cncc1ccccc1,1.3127,o=cncc1ccccc1,29.1,C8H15NO,1.0,1.0,10.0,10.0,3.0,141.214
+Phenylacetic acid,Not determined,o=c(o)cc1c=cc=cc=1,o=c(o)cc1ccccc1o,1.0192999999999999,o=c(o)cc1ccccc1o,57.53,C8H8O3,2.0,2.0,11.0,11.0,2.0,152.14899999999997
+Phenylmethanethiol,Negative,scc1c=cc=cc=1,cc1ccccc1,1.99502,cc1ccccc1,0.0,C7H8,0.0,0.0,7.0,7.0,0.0,92.14099999999999
+Piperidine,Negative,c1ccncc1,cc1ccccc1,1.99502,cc1ccccc1,0.0,C7H8,0.0,0.0,7.0,7.0,0.0,92.14099999999999
+Propyl dodecanoate,Not determined,cccccccccccc(=o)occc,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Propyl gallate,Negative,cccoc(=o)c1c=c(o)c(o)=c(o)c=1,ccccccccoc(=o)c1cc(o)c(o)c(o)c1,3.320700000000003,ccccccccoc(=o)c1cc(o)c(o)c(o)c1,86.99000000000001,C15H22O5,5.0,3.0,20.0,20.0,8.0,282.336
+Propyl hexadecanoate,Not determined,cccccccccccccccc(=o)occc,ccccccccccccccc1(c(=o)oc)co1,5.019600000000004,ccccccccccccccc1(c(=o)oc)co1,38.83,C18H34O3,3.0,0.0,21.0,21.0,14.0,298.467
+Propyl octanoate,Not determined,cccccccc(=o)occc,cccccccp(=o)(o)occ,3.178700000000002,cccccccp(=o)(o)occ,46.53,C9H21O3P,2.0,1.0,13.0,12.0,8.0,208.23799999999997
+Propyl paraben,Negative,cccoc(=o)c1c=cc(o)=cc=1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+Pyruvic acid,Not determined,cc(=o)c(=o)o,ccnc(=o)c(=o)[o-],-2.1275999999999993,ccnc(=o)c(=o)[o-],69.22999999999999,C4H6NO3-,3.0,1.0,8.0,7.0,1.0,116.09599999999998
+Retinyl acetate,No data,cc1cccc(c)(c)c=1/c=c/c(c)=c/c=c/c(c)=c/coc(c)=o,cc1cccc(c)(c)c=1/c=c/c(c)=c/c=c/c(c)=c/c(=o)o,5.602600000000005,cc1cccc(c)(c)c=1/c=c/c(c)=c/c=c/c(c)=c/c(=o)o,37.3,C20H28O2,1.0,1.0,22.0,22.0,5.0,300.44200000000006
+Salicylic acid,Negative,o=c(o)c1c(o)=cc=cc=1,o=c(o)c1ccccc1o,1.0903999999999998,o=c(o)c1ccccc1o,57.53,C7H6O3,2.0,2.0,10.0,10.0,1.0,138.12199999999999
+Stearic acid,Negative,cccccccccccccccccc(=o)o,cccccccc/c=c\cccccccc(=o)[o-],4.773800000000004,cccccccc/c=c\cccccccc(=o)[o-],40.129999999999995,C18H33O2-,2.0,0.0,20.0,19.0,15.0,281.4599999999999
+Succinic acid,No data,o=c(o)ccc(=o)o,o=cn(o)cccp(=o)(o)o,-0.5982000000000002,o=cn(o)cccp(=o)(o)o,98.07,C4H10NO5P,3.0,3.0,11.0,10.0,5.0,183.10000000000002
+Sulfanilamide,Negative,nc1c=cc(s(n)(=o)=o)=cc=1,cccccc1ccc(s(n)(=o)=o)cc1,2.0667,cccccc1ccc(s(n)(=o)=o)cc1,60.160000000000004,C11H17NO2S,2.0,1.0,15.0,15.0,5.0,227.32899999999998
+Tebufenozide,Negative,ccc1c=cc(c(=o)nn(c(=o)c2c=c(c)c=c(c)c=2)c(c)(c)c)=cc=1,ccc1ccc(c(=o)nn(c(=o)c2cc(c)cc(c)c2)c(c)(c)c)cc1,4.451540000000004,ccc1ccc(c(=o)nn(c(=o)c2cc(c)cc(c)c2)c(c)(c)c)cc1,49.410000000000004,C22H28N2O2,2.0,1.0,26.0,27.0,3.0,352.4780000000001
+Terephthalic acid,Negative,o=c(o)c1c=cc(c(=o)o)=cc=1,o=c(o)c1ccnc(c(=o)o)c1,0.478,o=c(o)c1ccnc(c(=o)o)c1,87.49000000000001,C7H5NO4,3.0,2.0,12.0,12.0,2.0,167.11999999999998
+Terpinolene,Not determined,cc(c)=c1cc=c(c)cc1,ncc(o)c1ccc(o)cc1,0.3843,ncc(o)c1ccc(o)cc1,66.48,C8H11NO2,3.0,3.0,11.0,11.0,2.0,153.18099999999998
+Tert-butyl acetate,Negative,cc(=o)oc(c)(c)c,cc(=o)occ[n+](c)(c)c,0.25570000000000004,cc(=o)occ[n+](c)(c)c,26.3,C7H16NO2+,2.0,0.0,10.0,9.0,3.0,146.21
+Tetradec-2-enal,Ambiguous,cccccccccccc=cc=o,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Tetradecan-1-ol,Negative,cccccccccccccco,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Tetradecan-2-one,Negative,ccccccccccccc(c)=o,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Tetradecane,Not determined,cccccccccccccc,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+"Tetradecano-1,5-lactone",No data,cccccccccc1cccc(=o)o1,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Tetrahydrofurfuryl acetate,Not determined,cc(=o)occ1ccco1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+Tetrahydrofurfuryl alcohol,Not determined,occ1ccco1,o=cc1cccnc1,0.8940999999999999,o=cc1cccnc1,29.96,C6H5NO,2.0,0.0,8.0,8.0,1.0,107.11199999999998
+Tetrahydrofurfuryl butyrate,Not determined,cccc(=o)occ1ccco1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+Tetrahydrofurfuryl cinnamate,Negative,o=c(c=cc1c=cc=cc=1)occ1ccco1,o=c(/c=c/c1ccccc1)occ1ccccc1,3.443200000000002,o=c(/c=c/c1ccccc1)occ1ccccc1,26.3,C16H14O2,2.0,0.0,18.0,19.0,4.0,238.286
+Tetrahydrofurfuryl propionate,Not determined,ccc(=o)occ1ccco1,n#ccnc(=o)occ1ccccc1,1.43638,n#ccnc(=o)occ1ccccc1,62.120000000000005,C10H10N2O2,3.0,1.0,14.0,14.0,3.0,190.20200000000003
+Thaumatin,No data,cc(=o)nc1c=cc(s(=o)(=o)n2ccn(c3cccccc3)cc2)=cc=1,cc(=o)c1ccc(ns(=o)(=o)c2c(c)cc(c)cc2c)cc1,3.615260000000003,cc(=o)c1ccc(ns(=o)(=o)c2c(c)cc(c)cc2c)cc1,63.24,C17H19NO3S,3.0,1.0,22.0,23.0,4.0,317.41
+Thiram,Negative,cn(c)c(=s)ssc(=s)n(c)c,ccn(cc)c(=s)ssc(=s)n(cc)cc,3.6212000000000026,ccn(cc)c(=s)ssc(=s)n(cc)cc,6.48,C10H20N2S4,4.0,0.0,16.0,15.0,4.0,296.5520000000001
+Thujyl alcohol,Not determined,cc1cc(o)c2(c(c)c)cc12,cc1cc(n)nc2ccccc12,2.12542,cc1cc(n)nc2ccccc12,38.91,C10H10N2,2.0,1.0,12.0,13.0,0.0,158.204
+Tridec-2-enal,Ambiguous,ccccccccccc=cc=o,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Tridecan-2-one,Ambiguous,cccccccccccc(c)=o,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+"Tridecano-1,5-lactone",Negative,ccccccccc1cccc(=o)o1,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Undec-10-enal,Not determined,c=cccccccccc=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+Undec-2-en-1-ol,Ambiguous,ccccccccc=cco,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+"Undecano-1,4-lactone",No data,cccccccc1ccc(=o)o1,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+"Undecano-1,5-lactone",No data,ccccccc1cccc(=o)o1,cccccccccccc#cc(=o)o,3.995300000000002,cccccccccccc#cc(=o)o,37.3,C14H24O2,1.0,1.0,16.0,15.0,9.0,224.34399999999997
+Vitamin A,No data,cc1cccc(c)(c)c=1/c=c/c(c)=c/c=c/c(c)=c/co,cc1cccc(c)(c)c=1/c=c/c(c)=c/c=c/c(c)=c/co,5.510300000000005,cc1cccc(c)(c)c=1/c=c/c(c)=c/c=c/c(c)=c/co,20.23,C20H30O,1.0,1.0,21.0,21.0,5.0,286.459
+beta-Ionyl acetate,Negative,cc1cccc(c)(c)c=1/c=c/c(c)oc(c)=o,cc1cccc(c)(c)c=1/c=c/c(c)=c/c=c/c(c)=c/co,5.510300000000005,cc1cccc(c)(c)c=1/c=c/c(c)=c/c=c/c(c)=c/co,20.23,C20H30O,1.0,1.0,21.0,21.0,5.0,286.459
+m-Tolualdehyde,Negative,cc1c=cc=c(c=o)c=1,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+o-Phthalic acid,Negative,o=c(o)c1c(c(=o)o)=cc=cc=1,o=c(o)c1ccnc(c(=o)o)c1,0.478,o=c(o)c1ccnc(c(=o)o)c1,87.49000000000001,C7H5NO4,3.0,2.0,12.0,12.0,2.0,167.11999999999998
+p-Anisyl butyrate,Negative,cccc(=o)occ1c=cc(oc)=cc=1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+p-Anisyl propionate,Negative,ccc(=o)occ1c=cc(oc)=cc=1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+"p-Mentha-1,8(10)-dien-9-ol",Not determined,c=c(co)c1cc=c(c)cc1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+"p-Mentha-1,8(10)-dien-9-yl acetate",Not determined,c=c(coc(c)=o)c1cc=c(c)cc1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+"p-Mentha-1,8-dien-7-al",Ambiguous,c=c(c)c1cc=c(c=o)cc1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+"p-Mentha-1,8-dien-7-ol",Ambiguous,c=c(c)c1cc=c(co)cc1,c=cc(=o)c1ccc(o)cc1,1.7609,c=cc(=o)c1ccc(o)cc1,37.3,C9H8O2,2.0,1.0,11.0,11.0,2.0,148.16099999999997
+"p-Menthane-1,8-diol",Negative,cc1(o)ccc(c(c)(c)o)cc1,cc1c(=o)ccc2(c)ccc(c(c)(c)o)cc2=1,3.2431000000000023,cc1c(=o)ccc2(c)ccc(c(c)(c)o)cc2=1,37.3,C15H24O2,2.0,1.0,17.0,18.0,1.0,236.35499999999996
+p-Tolualdehyde,Negative,cc1c=cc(c=o)=cc=1,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+p-Tolylacetaldehyde,Not determined,cc1c=cc(cc=o)=cc=1,cc1cncc(c=o)c1,1.20252,cc1cncc(c=o)c1,29.96,C7H7NO,2.0,0.0,9.0,9.0,1.0,121.13899999999997
+sec-Heptyl acetate,Negative,cccccc(c)oc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+sec-Heptyl hexanoate,Negative,cccccc(=o)oc(c)ccccc,ccn(cc)cc(=o)nc1c(c)cccc1c,2.5837400000000006,ccn(cc)cc(=o)nc1c(c)cccc1c,32.34,C14H22N2O,2.0,1.0,17.0,17.0,5.0,234.343
+sec-Octyl acetate,Negative,ccccccc(c)oc(c)=o,ccccccc(c)nc=o,2.0913,ccccccc(c)nc=o,29.1,C9H19NO,1.0,1.0,11.0,10.0,7.0,157.257
+trans-2-Nonenal,Ambiguous,cccccc/c=c/c=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+trans-2-Octenal,Ambiguous,ccccc/c=c/c=o,cccccccnc=o,1.7027999999999999,cccccccnc=o,29.1,C8H17NO,1.0,1.0,10.0,9.0,7.0,143.23
+trans-3-Hexenyl hexanoate,Negative,cc/c=c/ccoc(=o)ccccc,ccc/c=c1/oc(=o)c2ccccc12,2.998000000000001,ccc/c=c1/oc(=o)c2ccccc12,26.3,C12H12O2,2.0,0.0,14.0,15.0,2.0,188.226
