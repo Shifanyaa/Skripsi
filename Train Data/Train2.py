@@ -4,19 +4,18 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader, TensorDataset
 import pandas as pd
 import numpy as np
-from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import matthews_corrcoef, confusion_matrix, roc_curve, auc
 import matplotlib.pyplot as plt
-import os
 
-# ---------- RBM Class ----------
+# --- RBM ---
 class RBM(nn.Module):
     def __init__(self, n_visible, n_hidden, k=1):
         super(RBM, self).__init__()
         self.n_visible = n_visible
         self.n_hidden = n_hidden
         self.k = k
+
         self.W = nn.Parameter(torch.randn(n_hidden, n_visible) * 0.01)
         self.h_bias = nn.Parameter(torch.zeros(n_hidden))
         self.v_bias = nn.Parameter(torch.zeros(n_visible))
@@ -62,10 +61,9 @@ class RBM(nn.Module):
                 for param in self.parameters():
                     param.data += lr * param.grad
                 epoch_loss += torch.sum((v - self.forward(v)[1])**2)
-            print(f"[RBM] Epoch {epoch+1}/{epochs}, Loss: {epoch_loss.item():.4f}")
+            print(f"RBM Epoch {epoch+1}, Loss: {epoch_loss.item():.4f}")
 
-
-# ---------- DBN Class ----------
+# --- DBN ---
 class DBN(nn.Module):
     def __init__(self, rbm1, rbm2, output_dim):
         super(DBN, self).__init__()
@@ -85,92 +83,75 @@ class DBN(nn.Module):
         x = torch.sigmoid(self.out(x))
         return x
 
-
-# ---------- Data Handling ----------
-def load_and_preprocess(file_path):
-    df = pd.read_csv(file_path)
+# --- Load CSVs and Preprocess ---
+def load_and_preprocess(file, scaler=None, fit=False):
+    df = pd.read_csv(file)
     df = df.drop(columns=['Substance', 'Canonical_SMILES', 'formula'], errors='ignore')
     X = df.drop('Label', axis=1).values
     y = df['Label'].values
-    scaler = MinMaxScaler()
-    X_scaled = scaler.fit_transform(X)
-    return X_scaled, y
+    if fit:
+        X_scaled = scaler.fit_transform(X)
+    else:
+        X_scaled = scaler.transform(X)
+    return torch.tensor(X_scaled, dtype=torch.float32), torch.tensor(y, dtype=torch.float32).unsqueeze(1)
 
+scaler = MinMaxScaler()
+X_train, y_train = load_and_preprocess("train_data.csv", scaler, fit=True)
+X_val, y_val = load_and_preprocess("val_data.csv", scaler)
+X_test, y_test = load_and_preprocess("test_data.csv", scaler)
 
-def prepare_tensors(X, y):
-    X_tensor = torch.tensor(X, dtype=torch.float32)
-    y_tensor = torch.tensor(y, dtype=torch.float32).unsqueeze(1)
-    return X_tensor, y_tensor
+# --- Pretrain RBMs ---
+train_loader = DataLoader(TensorDataset(X_train), batch_size=32, shuffle=True)
+rbm1 = RBM(n_visible=X_train.shape[1], n_hidden=256)
+rbm1.train_rbm(train_loader, lr=0.01, epochs=10)
 
+with torch.no_grad():
+    h1, _ = rbm1.v_to_h(X_train)
 
-# ---------- Fine-tuning ----------
-def fine_tune(dbn_model, train_loader, epochs=20, lr=0.1):
-    criterion = nn.BCELoss()
-    optimizer = torch.optim.SGD(dbn_model.parameters(), lr=lr)
-    for epoch in range(epochs):
-        total_loss = 0
-        for x_batch, y_batch in train_loader:
-            output = dbn_model(x_batch)
-            loss = criterion(output, y_batch)
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
-            total_loss += loss.item()
-        print(f"[DBN] Epoch {epoch+1}/{epochs}, Fine-tune Loss: {total_loss:.4f}")
+rbm2 = RBM(n_visible=256, n_hidden=128)
+rbm2.train_rbm(DataLoader(TensorDataset(h1), batch_size=32, shuffle=True), lr=0.01, epochs=10)
 
+# --- Fine-tune DBN ---
+model = DBN(rbm1, rbm2, output_dim=1)
+criterion = nn.BCELoss()
+optimizer = torch.optim.SGD(model.parameters(), lr=0.1)
+train_sup_loader = DataLoader(TensorDataset(X_train, y_train), batch_size=32, shuffle=True)
 
-# ---------- Evaluation ----------
-def evaluate(model, X_test, y_test):
-    y_pred_prob = model(X_test).detach().numpy().ravel()
-    y_pred = (y_pred_prob > 0.5).astype(int)
-    mcc = matthews_corrcoef(y_test, y_pred)
-    cm = confusion_matrix(y_test, y_pred)
-    fpr, tpr, _ = roc_curve(y_test, y_pred_prob)
+for epoch in range(20):
+    total_loss = 0
+    for x_batch, y_batch in train_sup_loader:
+        output = model(x_batch)
+        loss = criterion(output, y_batch)
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+        total_loss += loss.item()
+    print(f"Fine-tuning Epoch {epoch+1}, Loss: {total_loss:.4f}")
+
+# --- Evaluation Function ---
+def evaluate(X, y, name):
+    y_prob = model(X).detach().numpy().ravel()
+    y_pred = (y_prob > 0.5).astype(int)
+    y_true = y.numpy().ravel()
+    mcc = matthews_corrcoef(y_true, y_pred)
+    cm = confusion_matrix(y_true, y_pred)
+    fpr, tpr, _ = roc_curve(y_true, y_prob)
     roc_auc = auc(fpr, tpr)
 
-    print("\n[Evaluation Results]")
-    print("Matthews Correlation Coefficient:", mcc)
+    print(f"\n{name} Evaluation:")
+    print("MCC:", mcc)
     print("Confusion Matrix:\n", cm)
 
     plt.figure()
-    plt.plot(fpr, tpr, label='ROC Curve (AUC = {:.2f})'.format(roc_auc))
+    plt.plot(fpr, tpr, label=f'{name} ROC (AUC = {roc_auc:.2f})')
     plt.plot([0, 1], [0, 1], 'k--')
     plt.xlabel('False Positive Rate')
     plt.ylabel('True Positive Rate')
-    plt.title('ROC Curve')
+    plt.title(f'{name} ROC Curve')
     plt.legend()
     plt.grid()
-    plt.savefig("roc_curve.png")
-    print("ROC curve saved to 'roc_curve.png'")
+    plt.savefig(f"{name.lower()}_roc_curve.png")
+    plt.close()
 
-
-# ---------- Main Pipeline ----------
-def main():
-    # Load & preprocess
-    X, y = load_and_preprocess('train_data.csv')
-    X_train, X_temp, y_train, y_temp = train_test_split(X, y, test_size=0.4, random_state=42)
-    X_val, X_test, y_val, y_test = train_test_split(X_temp, y_temp, test_size=0.5, random_state=42)
-
-    X_train_tensor, y_train_tensor = prepare_tensors(X_train, y_train)
-    train_loader = DataLoader(TensorDataset(X_train_tensor), batch_size=32, shuffle=True)
-
-    # Train RBM layers
-    rbm1 = RBM(n_visible=X_train.shape[1], n_hidden=256)
-    rbm1.train_rbm(train_loader, lr=0.01, epochs=10)
-    with torch.no_grad():
-        h1, _ = rbm1.v_to_h(X_train_tensor)
-
-    rbm2 = RBM(n_visible=256, n_hidden=128)
-    rbm2.train_rbm(DataLoader(TensorDataset(h1), batch_size=32, shuffle=True), lr=0.01, epochs=10)
-
-    # Fine-tune DBN
-    dbn = DBN(rbm1, rbm2, output_dim=1)
-    fine_tune(dbn, DataLoader(TensorDataset(X_train_tensor, y_train_tensor), batch_size=32, shuffle=True), epochs=20)
-
-    # Evaluate on test
-    X_test_tensor, _ = prepare_tensors(X_test, y_test)
-    evaluate(dbn, X_test_tensor, y_test)
-
-
-if __name__ == '__main__':
-    main()
+evaluate(X_val, y_val, "Validation")
+evaluate(X_test, y_test, "Test")
