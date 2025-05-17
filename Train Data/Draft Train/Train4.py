@@ -101,7 +101,7 @@ def load_and_preprocess(file, scaler=None, fit=False):
     return torch.tensor(X_scaled, dtype=torch.float32), torch.tensor(y, dtype=torch.float32).unsqueeze(1), X_scaled, y
 
 scaler = MinMaxScaler()
-X_train, y_train, X_train_np, y_train_np = load_and_preprocess("train_data.csv", scaler, fit=True)
+X_train, y_train, X_train_np, y_train_np = load_and_preprocess("train_data_balanced.csv", scaler, fit=True)
 X_val, y_val, X_val_np, y_val_np = load_and_preprocess("val_data.csv", scaler)
 X_test, y_test, X_test_np, y_test_np = load_and_preprocess("test_data.csv", scaler)
 
