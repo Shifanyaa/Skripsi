@@ -310,3 +310,335 @@
 2025-05-17 17:19:57,347 - INFO - Training complete in 0.95 seconds
 2025-05-17 17:19:57,347 - INFO - Validation MCC: -0.0584, AUC: 0.5706
 2025-05-17 17:19:57,347 - INFO - Test MCC: 0.0000, AUC: 0.6496
+2025-05-19 17:54:20,016 - INFO - Starting DBN pre-training...
+2025-05-19 17:54:20,037 - INFO - Pre-training RBM layer 1/3
+2025-05-19 17:54:20,640 - INFO - RBM Layer 1, Epoch 0, Loss: 1.4951
+2025-05-19 17:54:20,887 - INFO - RBM Layer 1, Epoch 10, Loss: 1.3759
+2025-05-19 17:54:21,108 - INFO - RBM Layer 1, Epoch 20, Loss: 1.2792
+2025-05-19 17:54:21,331 - INFO - RBM Layer 1, Epoch 30, Loss: 1.2262
+2025-05-19 17:54:21,534 - INFO - RBM Layer 1, Epoch 40, Loss: 1.1659
+2025-05-19 17:54:21,865 - INFO - RBM Layer 1, Epoch 50, Loss: 1.1498
+2025-05-19 17:54:22,156 - INFO - RBM Layer 1, Epoch 60, Loss: 1.1224
+2025-05-19 17:54:22,532 - INFO - RBM Layer 1, Epoch 70, Loss: 1.0910
+2025-05-19 17:54:22,822 - INFO - RBM Layer 1, Epoch 80, Loss: 1.0928
+2025-05-19 17:54:23,225 - INFO - RBM Layer 1, Epoch 90, Loss: 1.0689
+2025-05-19 17:54:23,502 - INFO - Pre-training RBM layer 2/3
+2025-05-19 17:54:23,545 - INFO - RBM Layer 2, Epoch 0, Loss: 0.2519
+2025-05-19 17:54:23,916 - INFO - RBM Layer 2, Epoch 10, Loss: 0.2519
+2025-05-19 17:54:24,312 - INFO - RBM Layer 2, Epoch 20, Loss: 0.2520
+2025-05-19 17:54:24,719 - INFO - RBM Layer 2, Epoch 30, Loss: 0.2520
+2025-05-19 17:54:25,073 - INFO - RBM Layer 2, Epoch 40, Loss: 0.2520
+2025-05-19 17:54:25,383 - INFO - RBM Layer 2, Epoch 50, Loss: 0.2518
+2025-05-19 17:54:25,708 - INFO - RBM Layer 2, Epoch 60, Loss: 0.2518
+2025-05-19 17:54:26,060 - INFO - RBM Layer 2, Epoch 70, Loss: 0.2519
+2025-05-19 17:54:26,366 - INFO - RBM Layer 2, Epoch 80, Loss: 0.2519
+2025-05-19 17:54:26,677 - INFO - RBM Layer 2, Epoch 90, Loss: 0.2519
+2025-05-19 17:54:26,979 - INFO - Pre-training RBM layer 3/3
+2025-05-19 17:54:27,013 - INFO - RBM Layer 3, Epoch 0, Loss: 0.2512
+2025-05-19 17:54:27,300 - INFO - RBM Layer 3, Epoch 10, Loss: 0.2512
+2025-05-19 17:54:27,520 - INFO - RBM Layer 3, Epoch 20, Loss: 0.2511
+2025-05-19 17:54:27,791 - INFO - RBM Layer 3, Epoch 30, Loss: 0.2512
+2025-05-19 17:54:28,052 - INFO - RBM Layer 3, Epoch 40, Loss: 0.2511
+2025-05-19 17:54:28,312 - INFO - RBM Layer 3, Epoch 50, Loss: 0.2511
+2025-05-19 17:54:28,556 - INFO - RBM Layer 3, Epoch 60, Loss: 0.2511
+2025-05-19 17:54:28,820 - INFO - RBM Layer 3, Epoch 70, Loss: 0.2510
+2025-05-19 17:54:29,085 - INFO - RBM Layer 3, Epoch 80, Loss: 0.2510
+2025-05-19 17:54:29,329 - INFO - RBM Layer 3, Epoch 90, Loss: 0.2509
+2025-05-19 17:54:29,563 - INFO - Starting DBN fine-tuning...
+2025-05-19 17:54:48,652 - INFO - Fine-tune Epoch 0, Validation Accuracy: 0.8161
+2025-05-19 17:54:50,528 - INFO - Fine-tune Epoch 10, Validation Accuracy: 0.8736
+2025-05-19 17:54:52,639 - INFO - Fine-tune Epoch 20, Validation Accuracy: 0.8621
+2025-05-19 17:54:54,911 - INFO - Fine-tune Epoch 30, Validation Accuracy: 0.8736
+2025-05-19 17:55:07,918 - INFO - Fine-tune Epoch 40, Validation Accuracy: 0.8736
+2025-05-19 17:55:12,130 - INFO - Fine-tune Epoch 50, Validation Accuracy: 0.8736
+2025-05-19 17:55:24,786 - INFO - Fine-tune Epoch 60, Validation Accuracy: 0.8736
+2025-05-19 17:55:37,517 - INFO - Fine-tune Epoch 70, Validation Accuracy: 0.8736
+2025-05-19 17:55:48,661 - INFO - Fine-tune Epoch 80, Validation Accuracy: 0.8736
+2025-05-19 17:55:50,577 - INFO - Fine-tune Epoch 90, Validation Accuracy: 0.8736
+2025-05-19 18:04:33,292 - INFO - Training DBN...
+2025-05-19 18:04:33,641 - INFO - Starting DBN pre-training...
+2025-05-19 18:04:33,641 - INFO - Pre-training RBM layer 1/3
+2025-05-19 18:04:34,268 - INFO - RBM Layer 1, Epoch 0, Loss: 1.4705
+2025-05-19 18:04:34,883 - INFO - RBM Layer 1, Epoch 10, Loss: 1.1657
+2025-05-19 18:04:35,502 - INFO - RBM Layer 1, Epoch 20, Loss: 1.0863
+2025-05-19 18:04:36,090 - INFO - RBM Layer 1, Epoch 30, Loss: 1.0762
+2025-05-19 18:04:36,788 - INFO - RBM Layer 1, Epoch 40, Loss: 1.0482
+2025-05-19 18:04:38,319 - INFO - RBM Layer 1, Epoch 50, Loss: 1.0346
+2025-05-19 18:04:42,055 - INFO - RBM Layer 1, Epoch 60, Loss: 1.0277
+2025-05-19 18:04:45,160 - INFO - RBM Layer 1, Epoch 70, Loss: 1.0284
+2025-05-19 18:04:45,837 - INFO - RBM Layer 1, Epoch 80, Loss: 1.0242
+2025-05-19 18:04:46,434 - INFO - RBM Layer 1, Epoch 90, Loss: 1.0228
+2025-05-19 18:04:47,012 - INFO - Pre-training RBM layer 2/3
+2025-05-19 18:04:47,137 - INFO - RBM Layer 2, Epoch 0, Loss: 0.2512
+2025-05-19 18:04:48,286 - INFO - RBM Layer 2, Epoch 10, Loss: 0.2512
+2025-05-19 18:04:50,077 - INFO - RBM Layer 2, Epoch 20, Loss: 0.2512
+2025-05-19 18:04:56,490 - INFO - RBM Layer 2, Epoch 30, Loss: 0.2512
+2025-05-19 18:05:03,617 - INFO - RBM Layer 2, Epoch 40, Loss: 0.2512
+2025-05-19 18:05:11,286 - INFO - RBM Layer 2, Epoch 50, Loss: 0.2512
+2025-05-19 18:05:17,474 - INFO - RBM Layer 2, Epoch 60, Loss: 0.2512
+2025-05-19 18:05:18,664 - INFO - RBM Layer 2, Epoch 70, Loss: 0.2512
+2025-05-19 18:05:19,724 - INFO - RBM Layer 2, Epoch 80, Loss: 0.2512
+2025-05-19 18:05:20,911 - INFO - RBM Layer 2, Epoch 90, Loss: 0.2512
+2025-05-19 18:05:22,160 - INFO - Pre-training RBM layer 3/3
+2025-05-19 18:05:22,239 - INFO - RBM Layer 3, Epoch 0, Loss: 0.2518
+2025-05-19 18:05:22,868 - INFO - RBM Layer 3, Epoch 10, Loss: 0.2513
+2025-05-19 18:05:23,491 - INFO - RBM Layer 3, Epoch 20, Loss: 0.2511
+2025-05-19 18:05:24,182 - INFO - RBM Layer 3, Epoch 30, Loss: 0.2509
+2025-05-19 18:05:24,709 - INFO - RBM Layer 3, Epoch 40, Loss: 0.2508
+2025-05-19 18:05:25,306 - INFO - RBM Layer 3, Epoch 50, Loss: 0.2505
+2025-05-19 18:05:25,878 - INFO - RBM Layer 3, Epoch 60, Loss: 0.2505
+2025-05-19 18:05:26,465 - INFO - RBM Layer 3, Epoch 70, Loss: 0.2504
+2025-05-19 18:05:27,101 - INFO - RBM Layer 3, Epoch 80, Loss: 0.2504
+2025-05-19 18:05:27,697 - INFO - RBM Layer 3, Epoch 90, Loss: 0.2503
+2025-05-19 18:05:28,238 - INFO - Starting DBN fine-tuning...
+2025-05-19 18:05:37,714 - INFO - Epoch 0, Val Loss: 0.6388, Acc: 0.8736
+2025-05-19 18:05:38,188 - INFO - Epoch 1, Val Loss: 0.6134, Acc: 0.8736
+2025-05-19 18:05:38,552 - INFO - Epoch 2, Val Loss: 0.9037, Acc: 0.8736
+2025-05-19 18:05:38,888 - INFO - Epoch 3, Val Loss: 1.0017, Acc: 0.8736
+2025-05-19 18:05:39,232 - INFO - Epoch 4, Val Loss: 8.0431, Acc: 0.1264
+2025-05-19 18:05:39,557 - INFO - Epoch 5, Val Loss: 0.8698, Acc: 0.8736
+2025-05-19 18:05:39,868 - INFO - Epoch 6, Val Loss: 1.5321, Acc: 0.8736
+2025-05-19 18:05:40,230 - INFO - Epoch 7, Val Loss: 2.4298, Acc: 0.1264
+2025-05-19 18:05:40,565 - INFO - Epoch 8, Val Loss: 0.3964, Acc: 0.8736
+2025-05-19 18:05:40,962 - INFO - Epoch 9, Val Loss: 0.7128, Acc: 0.8736
+2025-05-19 18:05:41,308 - INFO - Epoch 10, Val Loss: 0.4437, Acc: 0.8736
+2025-05-19 18:05:41,613 - INFO - Epoch 11, Val Loss: 0.9944, Acc: 0.1494
+2025-05-19 18:05:41,935 - INFO - Epoch 12, Val Loss: 0.5477, Acc: 0.8736
+2025-05-19 18:05:42,287 - INFO - Epoch 13, Val Loss: 1.0231, Acc: 0.1264
+2025-05-19 18:05:42,696 - INFO - Epoch 14, Val Loss: 0.4241, Acc: 0.8736
+2025-05-19 18:05:43,126 - INFO - Epoch 15, Val Loss: 0.3959, Acc: 0.8736
+2025-05-19 18:05:43,673 - INFO - Epoch 16, Val Loss: 0.4166, Acc: 0.8736
+2025-05-19 18:05:44,223 - INFO - Epoch 17, Val Loss: 0.4458, Acc: 0.8736
+2025-05-19 18:05:44,810 - INFO - Epoch 18, Val Loss: 0.3865, Acc: 0.8736
+2025-05-19 18:05:45,599 - INFO - Epoch 19, Val Loss: 0.4382, Acc: 0.8736
+2025-05-19 18:05:46,383 - INFO - Epoch 20, Val Loss: 0.5065, Acc: 0.8736
+2025-05-19 18:05:47,086 - INFO - Epoch 21, Val Loss: 0.4411, Acc: 0.8736
+2025-05-19 18:05:47,682 - INFO - Epoch 22, Val Loss: 0.4377, Acc: 0.8736
+2025-05-19 18:05:48,256 - INFO - Epoch 23, Val Loss: 0.5017, Acc: 0.8736
+2025-05-19 18:05:48,768 - INFO - Epoch 24, Val Loss: 0.4670, Acc: 0.8736
+2025-05-19 18:05:49,433 - INFO - Epoch 25, Val Loss: 0.5258, Acc: 0.8736
+2025-05-19 18:05:50,036 - INFO - Epoch 26, Val Loss: 0.5160, Acc: 0.8736
+2025-05-19 18:05:50,534 - INFO - Epoch 27, Val Loss: 0.4880, Acc: 0.8736
+2025-05-19 18:05:51,205 - INFO - Epoch 28, Val Loss: 0.4987, Acc: 0.8736
+2025-05-19 18:05:51,205 - INFO - Early stopping triggered.
+2025-05-19 18:05:51,425 - INFO - Total training time: 78.13 seconds
+2025-05-19 18:05:51,427 - INFO - Validation MCC: 0.0000, AUC: 0.4522
+2025-05-19 18:05:51,427 - INFO - Test MCC: 0.0000, AUC: 0.2699
+2025-05-19 20:27:11,665 - INFO - Training DBN...
+2025-05-19 20:27:12,000 - INFO - Starting DBN pre-training...
+2025-05-19 20:27:12,000 - INFO - Pre-training RBM layer 1/3
+2025-05-19 20:27:12,745 - INFO - RBM Layer 1, Epoch 0, Loss: 1.4647
+2025-05-19 20:27:14,573 - INFO - RBM Layer 1, Epoch 10, Loss: 1.1731
+2025-05-19 20:27:16,274 - INFO - RBM Layer 1, Epoch 20, Loss: 1.0925
+2025-05-19 20:27:17,922 - INFO - RBM Layer 1, Epoch 30, Loss: 1.0590
+2025-05-19 20:27:19,668 - INFO - RBM Layer 1, Epoch 40, Loss: 1.0440
+2025-05-19 20:27:21,385 - INFO - RBM Layer 1, Epoch 50, Loss: 1.0366
+2025-05-19 20:27:23,341 - INFO - RBM Layer 1, Epoch 60, Loss: 1.0322
+2025-05-19 20:27:25,211 - INFO - RBM Layer 1, Epoch 70, Loss: 1.0308
+2025-05-19 20:27:26,905 - INFO - RBM Layer 1, Epoch 80, Loss: 1.0309
+2025-05-19 20:27:28,616 - INFO - RBM Layer 1, Epoch 90, Loss: 1.0320
+2025-05-19 20:27:30,281 - INFO - Pre-training RBM layer 2/3
+2025-05-19 20:27:30,414 - INFO - RBM Layer 2, Epoch 0, Loss: 0.3249
+2025-05-19 20:27:31,569 - INFO - RBM Layer 2, Epoch 10, Loss: 0.3238
+2025-05-19 20:27:32,726 - INFO - RBM Layer 2, Epoch 20, Loss: 0.3214
+2025-05-19 20:27:33,919 - INFO - RBM Layer 2, Epoch 30, Loss: 0.3199
+2025-05-19 20:27:35,123 - INFO - RBM Layer 2, Epoch 40, Loss: 0.3189
+2025-05-19 20:27:36,282 - INFO - RBM Layer 2, Epoch 50, Loss: 0.3171
+2025-05-19 20:27:37,668 - INFO - RBM Layer 2, Epoch 60, Loss: 0.3163
+2025-05-19 20:27:39,071 - INFO - RBM Layer 2, Epoch 70, Loss: 0.3138
+2025-05-19 20:27:40,291 - INFO - RBM Layer 2, Epoch 80, Loss: 0.3122
+2025-05-19 20:27:41,632 - INFO - RBM Layer 2, Epoch 90, Loss: 0.3098
+2025-05-19 20:27:42,679 - INFO - Pre-training RBM layer 3/3
+2025-05-19 20:27:42,736 - INFO - RBM Layer 3, Epoch 0, Loss: 0.3131
+2025-05-19 20:27:43,313 - INFO - RBM Layer 3, Epoch 10, Loss: 0.2731
+2025-05-19 20:27:43,897 - INFO - RBM Layer 3, Epoch 20, Loss: 0.2400
+2025-05-19 20:27:44,488 - INFO - RBM Layer 3, Epoch 30, Loss: 0.2209
+2025-05-19 20:27:44,999 - INFO - RBM Layer 3, Epoch 40, Loss: 0.2105
+2025-05-19 20:27:45,616 - INFO - RBM Layer 3, Epoch 50, Loss: 0.2056
+2025-05-19 20:27:46,178 - INFO - RBM Layer 3, Epoch 60, Loss: 0.2027
+2025-05-19 20:27:46,741 - INFO - RBM Layer 3, Epoch 70, Loss: 0.2017
+2025-05-19 20:27:47,295 - INFO - RBM Layer 3, Epoch 80, Loss: 0.2002
+2025-05-19 20:27:47,883 - INFO - RBM Layer 3, Epoch 90, Loss: 0.1998
+2025-05-19 20:27:48,412 - INFO - Starting DBN fine-tuning...
+2025-05-19 20:28:12,080 - INFO - Epoch 0, Val Loss: 0.6016, Acc: 0.8413
+2025-05-19 20:28:12,946 - INFO - Epoch 1, Val Loss: 0.7521, Acc: 0.4603
+2025-05-19 20:28:13,931 - INFO - Epoch 2, Val Loss: 0.5239, Acc: 0.7079
+2025-05-19 20:28:14,783 - INFO - Epoch 3, Val Loss: 0.5620, Acc: 0.7365
+2025-05-19 20:28:15,622 - INFO - Epoch 4, Val Loss: 0.2442, Acc: 0.9492
+2025-05-19 20:28:16,514 - INFO - Epoch 5, Val Loss: 0.1661, Acc: 0.9492
+2025-05-19 20:28:17,473 - INFO - Epoch 6, Val Loss: 0.1659, Acc: 0.9429
+2025-05-19 20:28:18,382 - INFO - Epoch 7, Val Loss: 0.4522, Acc: 0.8254
+2025-05-19 20:28:19,537 - INFO - Epoch 8, Val Loss: 0.2187, Acc: 0.9143
+2025-05-19 20:28:23,204 - INFO - Epoch 9, Val Loss: 0.2002, Acc: 0.9429
+2025-05-19 20:28:25,114 - INFO - Epoch 10, Val Loss: 0.1906, Acc: 0.9302
+2025-05-19 20:28:25,848 - INFO - Epoch 11, Val Loss: 0.1587, Acc: 0.9460
+2025-05-19 20:28:26,513 - INFO - Epoch 12, Val Loss: 0.1790, Acc: 0.9302
+2025-05-19 20:28:27,464 - INFO - Epoch 13, Val Loss: 0.2835, Acc: 0.9048
+2025-05-19 20:28:28,629 - INFO - Epoch 14, Val Loss: 0.2784, Acc: 0.9079
+2025-05-19 20:28:29,808 - INFO - Epoch 15, Val Loss: 0.6306, Acc: 0.7968
+2025-05-19 20:28:30,578 - INFO - Epoch 16, Val Loss: 0.1776, Acc: 0.9397
+2025-05-19 20:28:31,290 - INFO - Epoch 17, Val Loss: 0.2005, Acc: 0.9302
+2025-05-19 20:28:31,982 - INFO - Epoch 18, Val Loss: 0.2702, Acc: 0.9143
+2025-05-19 20:28:32,613 - INFO - Epoch 19, Val Loss: 0.2212, Acc: 0.9238
+2025-05-19 20:28:33,257 - INFO - Epoch 20, Val Loss: 0.2273, Acc: 0.9302
+2025-05-19 20:28:33,883 - INFO - Epoch 21, Val Loss: 0.2172, Acc: 0.9238
+2025-05-19 20:28:33,884 - INFO - Early stopping triggered.
+2025-05-19 20:28:34,115 - INFO - Total training time: 82.45 seconds
+2025-05-19 20:28:34,116 - INFO - Validation MCC: 0.4232, AUC: 0.8186
+2025-05-19 20:28:34,116 - INFO - Test MCC: 0.3280, AUC: 0.8634
+2025-05-19 20:32:49,276 - INFO - Training CNN...
+2025-05-19 20:33:06,900 - INFO - Starting CNN training...
+2025-05-19 20:33:13,263 - INFO - Epoch 0, Validation Accuracy: 0.8857
+2025-05-19 20:33:44,605 - INFO - Epoch 10, Validation Accuracy: 0.9302
+2025-05-19 20:34:03,837 - INFO - Epoch 20, Validation Accuracy: 0.9238
+2025-05-19 20:34:30,703 - INFO - Epoch 30, Validation Accuracy: 0.9238
+2025-05-19 20:34:47,573 - INFO - Epoch 40, Validation Accuracy: 0.9270
+2025-05-19 20:35:03,925 - INFO - Total training time: 134.65 seconds
+2025-05-19 20:35:03,926 - INFO - Validation MCC: 0.3398, AUC: 0.8620
+2025-05-19 20:35:03,926 - INFO - Test MCC: 0.4707, AUC: 0.8618
+2025-05-19 20:36:01,441 - INFO - Training Random Forest...
+2025-05-19 20:36:02,085 - INFO - Evaluating Random Forest...
+2025-05-19 20:36:02,224 - INFO - Random Forest MCC: 0.3257, AUC: 0.9037
+2025-05-19 20:36:02,226 - INFO - Evaluating Random Forest...
+2025-05-19 20:36:02,341 - INFO - Random Forest MCC: 0.4105, AUC: 0.8990
+2025-05-19 20:36:02,342 - INFO - Total training time: 0.92 seconds
+2025-05-19 20:36:02,342 - INFO - Validation MCC: 0.3257, AUC: 0.9037
+2025-05-19 20:36:02,344 - INFO - Test MCC: 0.4105, AUC: 0.8990
+2025-05-19 21:23:07,215 - INFO - Training Random Forest...
+2025-05-19 21:23:07,230 - INFO - Training Random Forest...
+2025-05-19 21:23:07,772 - INFO - Evaluating Random Forest...
+2025-05-19 21:23:08,016 - INFO - Random Forest MCC: 0.3257, AUC: 0.9037
+2025-05-19 21:23:08,017 - INFO - Evaluating Random Forest...
+2025-05-19 21:23:08,133 - INFO - Random Forest MCC: 0.4105, AUC: 0.8990
+2025-05-19 21:23:08,134 - INFO - Total training time: 0.92s
+2025-05-19 21:23:08,135 - INFO - Validation MCC: 0.3257, AUC: 0.9037
+2025-05-19 21:23:08,135 - INFO - Test       MCC: 0.4105, AUC: 0.8990
+2025-05-19 21:23:30,657 - INFO - Training DBN...
+2025-05-19 21:23:31,390 - INFO - Starting DBN pre-training...
+2025-05-19 21:23:31,391 - INFO - Pre-training RBM layer 1/3
+2025-05-19 21:23:32,191 - INFO -  RBM1 Epoch 0: Loss=1.4376
+2025-05-19 21:23:33,938 - INFO -  RBM1 Epoch 10: Loss=1.0876
+2025-05-19 21:23:36,089 - INFO -  RBM1 Epoch 20: Loss=1.0430
+2025-05-19 21:23:38,567 - INFO -  RBM1 Epoch 30: Loss=1.0329
+2025-05-19 21:23:42,741 - INFO -  RBM1 Epoch 40: Loss=1.0313
+2025-05-19 21:23:45,713 - INFO -  RBM1 Epoch 50: Loss=1.0335
+2025-05-19 21:23:48,607 - INFO -  RBM1 Epoch 60: Loss=1.0377
+2025-05-19 21:23:51,018 - INFO -  RBM1 Epoch 70: Loss=1.0420
+2025-05-19 21:23:54,676 - INFO -  RBM1 Epoch 80: Loss=1.0475
+2025-05-19 21:23:58,170 - INFO -  RBM1 Epoch 90: Loss=1.0508
+2025-05-19 21:24:02,184 - INFO - Pre-training RBM layer 2/3
+2025-05-19 21:24:02,589 - INFO -  RBM2 Epoch 0: Loss=0.3953
+2025-05-19 21:24:05,791 - INFO -  RBM2 Epoch 10: Loss=0.3733
+2025-05-19 21:24:10,134 - INFO -  RBM2 Epoch 20: Loss=0.3664
+2025-05-19 21:24:12,466 - INFO -  RBM2 Epoch 30: Loss=0.3576
+2025-05-19 21:24:15,035 - INFO -  RBM2 Epoch 40: Loss=0.3495
+2025-05-19 21:24:17,105 - INFO -  RBM2 Epoch 50: Loss=0.3427
+2025-05-19 21:24:19,099 - INFO -  RBM2 Epoch 60: Loss=0.3385
+2025-05-19 21:24:21,446 - INFO -  RBM2 Epoch 70: Loss=0.3343
+2025-05-19 21:24:24,626 - INFO -  RBM2 Epoch 80: Loss=0.3328
+2025-05-19 21:24:27,374 - INFO -  RBM2 Epoch 90: Loss=0.3304
+2025-05-19 21:24:29,355 - INFO - Pre-training RBM layer 3/3
+2025-05-19 21:24:29,443 - INFO -  RBM3 Epoch 0: Loss=0.3599
+2025-05-19 21:24:30,721 - INFO -  RBM3 Epoch 10: Loss=0.2177
+2025-05-19 21:24:32,246 - INFO -  RBM3 Epoch 20: Loss=0.1828
+2025-05-19 21:24:33,454 - INFO -  RBM3 Epoch 30: Loss=0.1758
+2025-05-19 21:24:34,697 - INFO -  RBM3 Epoch 40: Loss=0.1724
+2025-05-19 21:24:36,252 - INFO -  RBM3 Epoch 50: Loss=0.1707
+2025-05-19 21:24:40,863 - INFO -  RBM3 Epoch 60: Loss=0.1699
+2025-05-19 21:24:45,106 - INFO -  RBM3 Epoch 70: Loss=0.1692
+2025-05-19 21:24:52,179 - INFO -  RBM3 Epoch 80: Loss=0.1681
+2025-05-19 21:25:07,163 - INFO -  RBM3 Epoch 90: Loss=0.1686
+2025-05-19 21:25:10,037 - INFO - Starting DBN fine-tuning...
+2025-05-19 21:25:36,847 - INFO - Epoch 0: Train(l=0.7299,a=0.5094) | Val(l=0.7292,a=0.2381)
+2025-05-19 21:25:37,311 - INFO - Epoch 1: Train(l=0.7073,a=0.5607) | Val(l=0.6832,a=0.4286)
+2025-05-19 21:25:37,698 - INFO - Epoch 2: Train(l=0.6093,a=0.6741) | Val(l=1.0831,a=0.1746)
+2025-05-19 21:25:38,057 - INFO - Epoch 3: Train(l=0.4838,a=0.7783) | Val(l=0.5516,a=0.6349)
+2025-05-19 21:25:38,591 - INFO - Epoch 4: Train(l=0.3806,a=0.8387) | Val(l=0.5834,a=0.6349)
+2025-05-19 21:25:40,055 - INFO - Epoch 5: Train(l=0.3179,a=0.8772) | Val(l=0.8965,a=0.4889)
+2025-05-19 21:25:41,366 - INFO - Epoch 6: Train(l=0.2720,a=0.8910) | Val(l=0.4260,a=0.7492)
+2025-05-19 21:25:42,374 - INFO - Epoch 7: Train(l=0.2294,a=0.9237) | Val(l=0.5877,a=0.6794)
+2025-05-19 21:25:43,165 - INFO - Epoch 8: Train(l=0.1925,a=0.9379) | Val(l=0.6583,a=0.6921)
+2025-05-19 21:25:43,952 - INFO - Epoch 9: Train(l=0.1718,a=0.9426) | Val(l=0.6421,a=0.7333)
+2025-05-19 21:25:44,841 - INFO - Epoch 10: Train(l=0.1459,a=0.9531) | Val(l=0.2586,a=0.9079)
+2025-05-19 21:25:45,677 - INFO - Epoch 11: Train(l=0.1398,a=0.9520) | Val(l=0.2308,a=0.9111)
+2025-05-19 21:25:46,527 - INFO - Epoch 12: Train(l=0.1168,a=0.9684) | Val(l=0.6819,a=0.7397)
+2025-05-19 21:25:47,290 - INFO - Epoch 13: Train(l=0.1128,a=0.9648) | Val(l=0.3053,a=0.8508)
+2025-05-19 21:25:48,010 - INFO - Epoch 14: Train(l=0.1033,a=0.9680) | Val(l=0.5791,a=0.7873)
+2025-05-19 21:25:48,682 - INFO - Epoch 15: Train(l=0.0856,a=0.9749) | Val(l=0.4550,a=0.8317)
+2025-05-19 21:25:49,415 - INFO - Epoch 16: Train(l=0.0782,a=0.9767) | Val(l=0.4693,a=0.8444)
+2025-05-19 21:25:50,151 - INFO - Epoch 17: Train(l=0.0785,a=0.9767) | Val(l=0.4071,a=0.8603)
+2025-05-19 21:25:50,836 - INFO - Epoch 18: Train(l=0.0650,a=0.9815) | Val(l=0.3253,a=0.8889)
+2025-05-19 21:25:51,584 - INFO - Epoch 19: Train(l=0.0670,a=0.9815) | Val(l=0.5027,a=0.8444)
+2025-05-19 21:25:52,552 - INFO - Epoch 20: Train(l=0.0680,a=0.9804) | Val(l=0.5412,a=0.8540)
+2025-05-19 21:25:53,403 - INFO - Epoch 21: Train(l=0.0639,a=0.9822) | Val(l=0.2615,a=0.9206)
+2025-05-19 21:25:53,404 - INFO - Early stopping.
+2025-05-19 21:26:28,876 - INFO - Total training time: 178.22s
+2025-05-19 21:26:28,876 - INFO - Validation MCC: 0.4696, AUC: 0.8081
+2025-05-19 21:26:28,876 - INFO - Test       MCC: 0.3037, AUC: 0.8400
+2025-05-19 21:57:23,798 - INFO - Training DBN...
+2025-05-19 21:57:24,924 - INFO - Starting DBN pre-training...
+2025-05-19 21:57:24,924 - INFO - Pre-training RBM layer 1/3
+2025-05-19 21:57:25,624 - INFO -  RBM1 Epoch 0: Loss=1.4992
+2025-05-19 21:57:29,331 - INFO -  RBM1 Epoch 10: Loss=1.1999
+2025-05-19 21:57:33,432 - INFO -  RBM1 Epoch 20: Loss=1.1113
+2025-05-19 21:57:43,041 - INFO -  RBM1 Epoch 30: Loss=1.0838
+2025-05-19 21:57:51,049 - INFO -  RBM1 Epoch 40: Loss=1.0688
+2025-05-19 21:57:58,943 - INFO -  RBM1 Epoch 50: Loss=1.0557
+2025-05-19 21:58:03,164 - INFO -  RBM1 Epoch 60: Loss=1.0625
+2025-05-19 21:58:08,127 - INFO -  RBM1 Epoch 70: Loss=1.0524
+2025-05-19 21:58:14,098 - INFO -  RBM1 Epoch 80: Loss=1.0568
+2025-05-19 21:58:18,179 - INFO -  RBM1 Epoch 90: Loss=1.0524
+2025-05-19 21:58:26,795 - INFO - Pre-training RBM layer 2/3
+2025-05-19 21:58:27,809 - INFO -  RBM2 Epoch 0: Loss=0.3343
+2025-05-19 21:58:35,360 - INFO -  RBM2 Epoch 10: Loss=0.3323
+2025-05-19 21:58:40,609 - INFO -  RBM2 Epoch 20: Loss=0.3311
+2025-05-19 21:58:45,750 - INFO -  RBM2 Epoch 30: Loss=0.3291
+2025-05-19 21:58:55,181 - INFO -  RBM2 Epoch 40: Loss=0.3272
+2025-05-19 21:59:01,064 - INFO -  RBM2 Epoch 50: Loss=0.3267
+2025-05-19 21:59:07,745 - INFO -  RBM2 Epoch 60: Loss=0.3248
+2025-05-19 21:59:12,941 - INFO -  RBM2 Epoch 70: Loss=0.3228
+2025-05-19 21:59:16,683 - INFO -  RBM2 Epoch 80: Loss=0.3203
+2025-05-19 21:59:21,865 - INFO -  RBM2 Epoch 90: Loss=0.3182
+2025-05-19 21:59:27,609 - INFO - Pre-training RBM layer 3/3
+2025-05-19 21:59:28,039 - INFO -  RBM3 Epoch 0: Loss=0.3225
+2025-05-19 21:59:30,420 - INFO -  RBM3 Epoch 10: Loss=0.2790
+2025-05-19 21:59:32,955 - INFO -  RBM3 Epoch 20: Loss=0.2435
+2025-05-19 21:59:34,836 - INFO -  RBM3 Epoch 30: Loss=0.2237
+2025-05-19 21:59:38,050 - INFO -  RBM3 Epoch 40: Loss=0.2143
+2025-05-19 21:59:40,208 - INFO -  RBM3 Epoch 50: Loss=0.2085
+2025-05-19 21:59:41,912 - INFO -  RBM3 Epoch 60: Loss=0.2057
+2025-05-19 21:59:43,470 - INFO -  RBM3 Epoch 70: Loss=0.2043
+2025-05-19 21:59:44,961 - INFO -  RBM3 Epoch 80: Loss=0.2034
+2025-05-19 21:59:46,443 - INFO -  RBM3 Epoch 90: Loss=0.2021
+2025-05-19 21:59:47,649 - INFO - Starting DBN fine-tuning...
+2025-05-19 22:00:18,941 - INFO - Epoch 0: Train(l=0.7244,a=0.5073) | Val(l=0.6293,a=0.9429)
+2025-05-19 22:00:19,350 - INFO - Epoch 1: Train(l=0.6908,a=0.5665) | Val(l=0.5423,a=0.9429)
+2025-05-19 22:00:19,879 - INFO - Epoch 2: Train(l=0.6326,a=0.6544) | Val(l=0.5411,a=0.9270)
+2025-05-19 22:00:20,458 - INFO - Epoch 3: Train(l=0.5004,a=0.7965) | Val(l=0.4992,a=0.8000)
+2025-05-19 22:00:21,225 - INFO - Epoch 4: Train(l=0.3754,a=0.8721) | Val(l=0.6051,a=0.6794)
+2025-05-19 22:00:22,089 - INFO - Epoch 5: Train(l=0.2898,a=0.9092) | Val(l=0.2483,a=0.9143)
+2025-05-19 22:00:23,370 - INFO - Epoch 6: Train(l=0.2248,a=0.9419) | Val(l=0.1975,a=0.9587)
+2025-05-19 22:00:25,054 - INFO - Epoch 7: Train(l=0.1786,a=0.9608) | Val(l=0.2729,a=0.8984)
+2025-05-19 22:00:27,341 - INFO - Epoch 8: Train(l=0.1497,a=0.9655) | Val(l=0.1984,a=0.9524)
+2025-05-19 22:00:28,635 - INFO - Epoch 9: Train(l=0.1288,a=0.9724) | Val(l=0.2797,a=0.8984)
+2025-05-19 22:00:29,688 - INFO - Epoch 10: Train(l=0.1061,a=0.9786) | Val(l=0.2841,a=0.8984)
+2025-05-19 22:00:30,319 - INFO - Epoch 11: Train(l=0.0973,a=0.9829) | Val(l=0.1858,a=0.9397)
+2025-05-19 22:00:30,839 - INFO - Epoch 12: Train(l=0.0888,a=0.9833) | Val(l=0.2061,a=0.9270)
+2025-05-19 22:00:31,310 - INFO - Epoch 13: Train(l=0.0842,a=0.9866) | Val(l=0.1799,a=0.9270)
+2025-05-19 22:00:31,756 - INFO - Epoch 14: Train(l=0.0780,a=0.9869) | Val(l=0.1908,a=0.9206)
+2025-05-19 22:00:32,208 - INFO - Epoch 15: Train(l=0.0777,a=0.9866) | Val(l=0.1789,a=0.9333)
+2025-05-19 22:00:32,695 - INFO - Epoch 16: Train(l=0.0739,a=0.9866) | Val(l=0.1820,a=0.9302)
+2025-05-19 22:00:33,206 - INFO - Epoch 17: Train(l=0.0699,a=0.9884) | Val(l=0.2198,a=0.9079)
+2025-05-19 22:00:33,680 - INFO - Epoch 18: Train(l=0.0664,a=0.9876) | Val(l=0.1942,a=0.9206)
+2025-05-19 22:00:34,142 - INFO - Epoch 19: Train(l=0.0642,a=0.9902) | Val(l=0.1940,a=0.9206)
+2025-05-19 22:00:34,657 - INFO - Epoch 20: Train(l=0.0601,a=0.9909) | Val(l=0.1940,a=0.9206)
+2025-05-19 22:00:35,134 - INFO - Epoch 21: Train(l=0.0612,a=0.9902) | Val(l=0.2431,a=0.9048)
+2025-05-19 22:00:35,664 - INFO - Epoch 22: Train(l=0.0566,a=0.9916) | Val(l=0.3031,a=0.8921)
+2025-05-19 22:00:36,276 - INFO - Epoch 23: Train(l=0.0601,a=0.9880) | Val(l=0.2174,a=0.9143)
+2025-05-19 22:00:36,890 - INFO - Epoch 24: Train(l=0.0581,a=0.9906) | Val(l=0.2435,a=0.9079)
+2025-05-19 22:00:37,616 - INFO - Epoch 25: Train(l=0.0551,a=0.9909) | Val(l=0.2679,a=0.9016)
+2025-05-19 22:00:37,617 - INFO - Early stopping.
+2025-05-19 22:01:11,201 - INFO - Model dan scaler tersimpan (dbn_final.pth, scaler.pkl)
+2025-05-19 22:01:11,443 - INFO - Total training time: 227.65s
+2025-05-19 22:01:11,443 - INFO - Validation MCC: 0.4199, AUC: 0.8064
+2025-05-19 22:01:11,443 - INFO - Test       MCC: 0.3427, AUC: 0.8892

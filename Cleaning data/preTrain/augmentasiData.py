@@ -1,77 +1,121 @@
 import pandas as pd
 import numpy as np
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.feature_selection import VarianceThreshold
-from imblearn.over_sampling import SMOTE
+from rdkit import Chem
+from rdkit.Chem import AllChem, Descriptors
+from scipy.stats.mstats import winsorize
+from sklearn.preprocessing import Binarizer, StandardScaler
 from sklearn.model_selection import train_test_split
+from imblearn.over_sampling import ADASYN
+from imblearn.combine import SMOTEENN
+from rdkit import DataStructs
 
-# 1. Load dan filter data
+
+# 1. Load raw data
 df = pd.read_csv("molecule_list_from_genotoxic.csv")
-df = df[~df['Genotoxicity'].isin(['No Data', 'Ambiguous'])].copy()
-df['Label'] = df['Genotoxicity'].str.lower().isin(['positive', 'yes']).astype(int)
 
-# 2. Fitur awal
-features = [
-    "LogP", "TPSA", "hbond_acceptors", "hbond_donors",
-    "num_atoms", "num_bonds", "rotatable_bonds", "weight"
-]
-X = df[features].copy()
-y = df['Label']
+# 2. Drop duplicate molecules by Canonical_SMILES (keep first):contentReference[oaicite:6]{index=6}
+df = df.drop_duplicates(subset=["Canonical_SMILES"], keep="first")
 
-# 3. (Opsional) Tangani outliers dengan winsorizing di 1st–99th percentile
-for col in features:
-    lower, upper = np.percentile(X[col], [1, 99])
-    X[col] = X[col].clip(lower=lower, upper=upper)
+# 3. Generate molecular descriptors and fingerprints
+# Example: compute Morgan fingerprint bits (radius=2, nBits=2048)
+def mol_to_fingerprint(smiles, radius=2, nBits=2048):
+    mol = Chem.MolFromSmiles(smiles)
+    if mol is None:
+        return None
+    fp = AllChem.GetMorganFingerprintAsBitVect(mol, radius, nBits)
+    arr = np.zeros((1,), dtype=int)
+    DataStructs.ConvertToNumpyArray(fp, arr)
+    return arr
 
-# 4. Buang fitur variansi rendah (<0.01)
-vt = VarianceThreshold(threshold=0.01)
-vt.fit(X)
-mask = vt.get_support()  # boolean mask fitur yang lulus
-X = X.loc[:, mask]
-kept_features = X.columns.tolist()
-print("Fitur setelah VarianceThreshold:", kept_features)
+# Compute fingerprint for each SMILES and append as FP_0,...,FP_2047
+fps = df["Canonical_SMILES"].apply(lambda smi: mol_to_fingerprint(smi))
+fp_array = np.array(list(fps.values))
+# Name fingerprint columns
+fp_cols = [f"FP_{i}" for i in range(fp_array.shape[1])]
+fp_df = pd.DataFrame(fp_array, columns=fp_cols, index=df.index)
+df = pd.concat([df, fp_df], axis=1)
 
-# 5. Buang fitur highly correlated (|corr| > 0.9)
-corr = X.corr().abs()
-upper = corr.where(np.triu(np.ones(corr.shape), k=1).astype(bool))
-to_drop = [col for col in upper.columns if any(upper[col] > 0.9)]
-X.drop(columns=to_drop, inplace=True)
-print("Fitur yang di-drop karena korelasi tinggi:", to_drop)
-print("Fitur akhir:", X.columns.tolist())
+# 4. Remove fingerprint bits active in <1% of samples
+min_samples = len(df) * 0.01
+mask = (df[fp_cols].sum(axis=0) >= min_samples)
+rare_bits = [col for col, keep in zip(fp_cols, mask) if not keep]
+df = df.drop(columns=rare_bits)
+remaining_fp_cols = [col for col in fp_cols if col not in rare_bits]
 
-# 6. Scaling (MinMax tetap, atau ganti RobustScaler jika suka)
-scaler = MinMaxScaler()
-X_scaled = scaler.fit_transform(X)
+# 5. Winsorize continuous features to cap outliers:contentReference[oaicite:7]{index=7}
+cont_cols = ["LogP", "TPSA", "hbond_acceptors", "hbond_donors",
+             "num_atoms", "num_bonds", "rotatable_bonds", "weight"]
+for col in cont_cols:
+    # Replace NaNs if any, then winsorize 5% on each tail
+    col_data = df[col].fillna(df[col].median()).values
+    df[col] = winsorize(col_data, limits=[0.05, 0.05])
 
-# 7. SMOTE pada fitur terpilih
-smote = SMOTE(random_state=42)
-X_res, y_res = smote.fit_resample(X_scaled, y)
+# 6. Binarize continuous features based on median threshold:contentReference[oaicite:8]{index=8}
+binarizer = Binarizer(threshold=0.0, copy=True)
+for col in cont_cols:
+    threshold = df[col].median()
+    df[col] = (df[col] > threshold).astype(int)  # equivalent to Binarizer
 
-# 8. Split: Train (70%) + Temp (30%)
-X_train, X_temp, y_train, y_temp = train_test_split(
-    X_res, y_res,
-    test_size=0.30,
-    random_state=42,
-    stratify=y_res
+# 7. Feature reduction (optional): e.g., PCA or variance threshold
+# (Placeholder – implement as needed)
+# from sklearn.decomposition import PCA
+# pca = PCA(n_components=50)
+# pca_features = pca.fit_transform(df[cont_cols + remaining_fp_cols])
+# df_reduced = pd.DataFrame(pca_features, 
+#                           columns=[f"PCA_{i}" for i in range(pca_features.shape[1])],
+#                           index=df.index)
+# df = pd.concat([df.drop(columns=cont_cols+remaining_fp_cols), df_reduced], axis=1)
+
+# For simplicity, we will proceed without additional reduction.
+
+# 8. Prepare features X and label y
+# Map label to 0/1 (e.g. Negative=0, Positive=1)
+df["Label"] = df["Genotoxicity"].map({"Negative": 0, "Positive": 1})
+feature_cols = cont_cols + remaining_fp_cols  # combined feature list
+X = df[feature_cols].astype(float)
+y = df["Label"].astype(int)
+
+# 9. Stratified split into train, temp_test (80%), and test (20%):contentReference[oaicite:9]{index=9}
+X_temp, X_test, y_temp, y_test = train_test_split(
+    X, y, test_size=0.2, stratify=y, random_state=42
+)
+# Further split temp into train (75% of 80%=60%) and val (25% of 80%=20%)
+X_train, X_val, y_train, y_val = train_test_split(
+    X_temp, y_temp, test_size=0.25, stratify=y_temp, random_state=42
 )
 
-# 9. Split Temp: Validation (15%) & Test (15%)
-X_val, X_test, y_val, y_test = train_test_split(
-    X_temp, y_temp,
-    test_size=0.50,
-    random_state=42,
-    stratify=y_temp
-)
+# 10. Log label distribution in each split
+def log_distribution(name, y_split):
+    counts = y_split.value_counts()
+    print(f"{name} set - Positive: {counts.get(1, 0)}, Negative: {counts.get(0, 0)}, " +
+          f"Total: {len(y_split)}")
+log_distribution("Train", y_train)
+log_distribution("Validation", y_val)
+log_distribution("Test", y_test)
 
-# 10. Simpan ke CSV
-final_features = X.columns.tolist()
-pd.DataFrame(X_train, columns=final_features).assign(Label=y_train)\
-  .to_csv("train.csv", index=False)
-pd.DataFrame(X_val,   columns=final_features).assign(Label=y_val)\
-  .to_csv("val.csv",   index=False)
-pd.DataFrame(X_test,  columns=final_features).assign(Label=y_test)\
-  .to_csv("test.csv",  index=False)
+# 11. Oversample training set with ADASYN then SMOTEENN:contentReference[oaicite:10]{index=10}:contentReference[oaicite:11]{index=11}
+adasyn = ADASYN(random_state=42)
+X_train_res, y_train_res = adasyn.fit_resample(X_train, y_train)
 
-print("✅ Preprocessing selesai.")
-print("Fitur akhir digunakan:", final_features)
-print("📁 train.csv (70%), val.csv (15%), test.csv (15%)")
+smote_enn = SMOTEENN(random_state=42)
+X_train_res, y_train_res = smote_enn.fit_resample(X_train_res, y_train_res)
+
+# 12. Normalize features (StandardScaler) on training, apply to val/test
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train_res)
+X_val_scaled   = scaler.transform(X_val)
+X_test_scaled  = scaler.transform(X_test)
+
+# 13. Save processed data to CSV (features + Label)
+train_df = pd.DataFrame(X_train_scaled, columns=feature_cols)
+train_df["Label"] = y_train_res.reset_index(drop=True)
+val_df   = pd.DataFrame(X_val_scaled,   columns=feature_cols)
+val_df["Label"]   = y_val.reset_index(drop=True)
+test_df  = pd.DataFrame(X_test_scaled,  columns=feature_cols)
+test_df["Label"]  = y_test.reset_index(drop=True)
+
+train_df.to_csv("train.csv", index=False)
+val_df.to_csv("val.csv", index=False)
+test_df.to_csv("test.csv", index=False)
+
+print("Preprocessing complete: train.csv, val.csv, test.csv saved.")

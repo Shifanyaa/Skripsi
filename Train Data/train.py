@@ -1,9 +1,14 @@
+# train.py
 import torch
 import pandas as pd
 import numpy as np
 import argparse
 import logging
 import time
+import matplotlib.pyplot as plt
+from collections import deque
+import joblib
+
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import matthews_corrcoef, roc_auc_score
 from models.dbn import DBN
@@ -14,94 +19,161 @@ def setup_logging():
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - %(levelname)s - %(message)s',
-        handlers=[
-            logging.FileHandler("training.log"),
-            logging.StreamHandler()
-        ]
+        handlers=[logging.FileHandler("training.log"), logging.StreamHandler()]
     )
 
-def load_data(train_path, val_path, test_path):
-    # Load datasets
-    train_df = pd.read_csv(train_path)
-    val_df = pd.read_csv(val_path)
-    test_df = pd.read_csv(test_path)
+def load_data(p):
+    df = pd.read_csv(p).dropna(subset=['Label'])
+    y = np.where(df['Label']>0,1,0)
+    X = df.drop(columns=['Label'])
+    return X.values, y
 
-    # Handle missing values (NaN) in target labels by dropping rows with NaN values in 'Label'
-    train_df.dropna(subset=['Label'], inplace=True)
-    val_df.dropna(subset=['Label'], inplace=True)
-    test_df.dropna(subset=['Label'], inplace=True)
-
-    # Convert the 'Label' column to binary (0 or 1)
-    y_train = np.where(train_df['Label'] > 0, 1, 0)
-    y_val = np.where(val_df['Label'] > 0, 1, 0)
-    y_test = np.where(test_df['Label'] > 0, 1, 0)
-
-    # Drop the 'Label' column and use other features for X
-    X_train = train_df.drop(columns=['Label'])
-    X_val = val_df.drop(columns=['Label'])
-    X_test = test_df.drop(columns=['Label'])
-
-    # Normalize the features
-    scaler = StandardScaler()
-    X_train = scaler.fit_transform(X_train)
-    X_val = scaler.transform(X_val)
-    X_test = scaler.transform(X_test)
-
-    return X_train, y_train, X_val, y_val, X_test, y_test
-
-def evaluate_torch_model(model, X, y):
+def evaluate_torch(model, X, y):
     with torch.no_grad():
-        preds = model(X).squeeze()
-        pred_bin = (preds > 0.5).float()
-        mcc = matthews_corrcoef(y.cpu().numpy(), pred_bin.cpu().numpy())
-        auc = roc_auc_score(y.cpu().numpy(), preds.cpu().numpy())
-        return mcc, auc
+        preds = model(torch.tensor(X, dtype=torch.float32)).squeeze()
+        predb = (preds>0.5).float().cpu().numpy()
+        mcc = matthews_corrcoef(y, predb)
+        auc = roc_auc_score(y, preds.cpu().numpy())
+    return mcc, auc
+
+def plot_metrics(dbn):
+    # compute moving average for val loss
+    window = 3
+    mv = lambda lst: np.convolve(lst, np.ones(window)/window, mode='valid')
+    epochs = range(1, len(dbn.train_losses)+1)
+    plt.figure(figsize=(10,4))
+
+    plt.subplot(1,2,1)
+    plt.plot(epochs, dbn.train_accs, label='Train Acc')
+    plt.plot(epochs, dbn.val_accs,   label='Val Acc', linestyle='--')
+    plt.title('Accuracy per Epoch')
+    plt.xlabel('Epoch'); plt.ylabel('Accuracy')
+    plt.legend()
+
+    plt.subplot(1,2,2)
+    plt.plot(epochs, dbn.train_losses, label='Train Loss')
+    # plot raw val loss lightly
+    plt.plot(epochs, dbn.val_losses,   label='Val Loss', linestyle='--', alpha=0.3)
+    # plot smoothed val loss
+    smoothed = mv(dbn.val_losses)
+    plt.plot(range(window, len(dbn.val_losses)+1), smoothed,
+             label='Val Loss (MA)', linestyle='-')
+    plt.title('Loss per Epoch')
+    plt.xlabel('Epoch'); plt.ylabel('Loss')
+    plt.legend()
+
+    plt.tight_layout()
+    plt.savefig("training_plot.png")
+    plt.show()
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", choices=["cnn", "dbn", "rf"], required=True)
+    parser.add_argument("--model", choices=["cnn","dbn","rf"], required=True)
     args = parser.parse_args()
 
     setup_logging()
+    X_train,y_train = load_data("train.csv")
+    X_val,  y_val   = load_data("val.csv")
+    X_test, y_test  = load_data("test.csv")
 
-    # Load and preprocess data
-    X_train, y_train, X_val, y_val, X_test, y_test = load_data("train.csv", "val.csv", "test.csv")
-    input_dim = X_train.shape[1]
+    total_start = time.time()
 
-    # Convert to PyTorch tensors
-    X_train_tensor = torch.tensor(X_train, dtype=torch.float32, requires_grad=True)
-    y_train_tensor = torch.tensor(y_train, dtype=torch.float32, requires_grad=True)
-    X_val_tensor = torch.tensor(X_val, dtype=torch.float32)
-    y_val_tensor = torch.tensor(y_val, dtype=torch.float32)
-    X_test_tensor = torch.tensor(X_test, dtype=torch.float32)
-    y_test_tensor = torch.tensor(y_test, dtype=torch.float32)
-
-    start_time = time.time()
-
-    if args.model == "dbn":
+    if args.model=="dbn":
         logging.info("Training DBN...")
-        model = DBN(n_visible=input_dim, n_hidden=[128, 64])
-        model.train_model(X_train_tensor, y_train_tensor, val_data=(X_val_tensor, y_val_tensor), epochs=50)
-        mcc_val, auc_val = evaluate_torch_model(model, X_val_tensor, y_val_tensor)
-        mcc_test, auc_test = evaluate_torch_model(model, X_test_tensor, y_test_tensor)
+        model = DBN(n_visible=X_train.shape[1])
+        # scaler untuk inferensi nanti
+        scaler = StandardScaler().fit(X_train)
+        X_tr = scaler.transform(X_train)
+        X_v  = scaler.transform(X_val)
+        X_ts = scaler.transform(X_test)
 
-    elif args.model == "cnn":
+        # tensor
+        Xtr = torch.tensor(X_tr, dtype=torch.float32)
+        ytr = torch.tensor(y_train, dtype=torch.float32)
+        Xv  = torch.tensor(X_v,  dtype=torch.float32)
+        yv  = torch.tensor(y_val,   dtype=torch.float32)
+
+        # train with larger batch_size=128
+        model.train_model(Xtr, ytr, val_data=(Xv,yv),
+                          epochs=100, batch_size=128, lr=1e-4)
+
+        # plot dengan smoothing
+        plot_metrics(model)
+
+        # simpan model & scaler
+        torch.save(model.state_dict(), "dbn_final.pth")
+        joblib.dump(scaler, "scaler.pkl")
+        logging.info("Model dan scaler tersimpan (dbn_final.pth, scaler.pkl)")
+
+        mcc_val, auc_val = evaluate_torch(model, X_v, y_val)
+        mcc_test,auc_test= evaluate_torch(model, X_ts, y_test)
+
+    elif args.model=="cnn":
         logging.info("Training CNN...")
-        model = CNNModel(input_dim)
-        model.train_model(X_train_tensor, y_train_tensor, val_data=(X_val_tensor, y_val_tensor), epochs=50)
-        mcc_val, auc_val = evaluate_torch_model(model, X_val_tensor, y_val_tensor)
-        mcc_test, auc_test = evaluate_torch_model(model, X_test_tensor, y_test_tensor)
+        model = DBN(n_visible=X_train.shape[1])
+        # scaler untuk inferensi nanti
+        scaler = StandardScaler().fit(X_train)
+        X_tr = scaler.transform(X_train)
+        X_v  = scaler.transform(X_val)
+        X_ts = scaler.transform(X_test)
 
-    elif args.model == "rf":
-        logging.info("Training Random Forest...")
-        model = train_rf(X_train, y_train)
-        mcc_val, auc_val = evaluate_rf(model, X_val, y_val)
-        mcc_test, auc_test = evaluate_rf(model, X_test, y_test)
+        # tensor
+        Xtr = torch.tensor(X_tr, dtype=torch.float32)
+        ytr = torch.tensor(y_train, dtype=torch.float32)
+        Xv  = torch.tensor(X_v,  dtype=torch.float32)
+        yv  = torch.tensor(y_val,   dtype=torch.float32)
 
-    end_time = time.time()
-    logging.info(f"Training complete in {(end_time - start_time):.2f} seconds")
+        # train with larger batch_size=128
+        model.train_model(Xtr, ytr, val_data=(Xv,yv),
+                          epochs=100, batch_size=128, lr=1e-4)
+
+        # plot dengan smoothing
+        plot_metrics(model)
+
+        # simpan model & scaler
+        torch.save(model.state_dict(), "CNN_final.pth")
+        joblib.dump(scaler, "scalercnn.pkl")
+        logging.info("Model dan scaler tersimpan (cnn_final.pth, scalercnn.pkl)")
+
+        mcc_val, auc_val = evaluate_torch(model, X_v, y_val)
+        mcc_test,auc_test= evaluate_torch(model, X_ts, y_test)
+        pass
+
+    else:
+        logging.info("Training RF...")
+        model = DBN(n_visible=X_train.shape[1])
+        # scaler untuk inferensi nanti
+        scaler = StandardScaler().fit(X_train)
+        X_tr = scaler.transform(X_train)
+        X_v  = scaler.transform(X_val)
+        X_ts = scaler.transform(X_test)
+
+        # tensor
+        Xtr = torch.tensor(X_tr, dtype=torch.float32)
+        ytr = torch.tensor(y_train, dtype=torch.float32)
+        Xv  = torch.tensor(X_v,  dtype=torch.float32)
+        yv  = torch.tensor(y_val,   dtype=torch.float32)
+
+        # train with larger batch_size=128
+        model.train_model(Xtr, ytr, val_data=(Xv,yv),
+                          epochs=100, batch_size=128, lr=1e-4)
+
+        # plot dengan smoothing
+        plot_metrics(model)
+
+        # simpan model & scaler
+        torch.save(model.state_dict(), "rf_final.pth")
+        joblib.dump(scaler, "scalerrf.pkl")
+        logging.info("Model dan scaler tersimpan (rf_final.pth, scalerrf.pkl)")
+
+        mcc_val, auc_val = evaluate_torch(model, X_v, y_val)
+        mcc_test,auc_test= evaluate_torch(model, X_ts, y_test)
+        pass
+
+    total_end = time.time()
+    logging.info(f"Total training time: {total_end-total_start:.2f}s")
     logging.info(f"Validation MCC: {mcc_val:.4f}, AUC: {auc_val:.4f}")
-    logging.info(f"Test MCC: {mcc_test:.4f}, AUC: {auc_test:.4f}")
+    logging.info(f"Test       MCC: {mcc_test:.4f}, AUC: {auc_test:.4f}")
 
-if __name__ == "__main__":
+if __name__=="__main__":
     main()
