@@ -2,7 +2,7 @@ import pandas as pd
 from rdkit import Chem
 from rdkit.Chem import Descriptors, rdMolDescriptors
 
-print("📦 Membaca file data...")
+print("Membaca file data...")
 # Ganti nama file ini jika Anda pakai nama lain
 df = pd.read_csv("Genotoxic Smiles.csv")
 
@@ -34,7 +34,7 @@ def compute_features(smiles):
                 Descriptors.MolWt(mol)                            # Berat molekul
             ]
     except Exception as e:
-        print(f"⚠️ Gagal parsing SMILES: {smiles}")
+        print(f"Gagal parsing SMILES: {smiles}")
     return [None]*10
 
 print("⚙️ Menghitung fitur molekul dari SMILES...")
@@ -55,4 +55,4 @@ if "Substance" in df.columns and "Genotoxicity" in df.columns:
 output_file = "molecule_list_from_genotoxic.csv"
 df_features.dropna(subset=["Canonical_SMILES"], inplace=True)
 df_features.to_csv(output_file, index=False)
-print(f"✅ Selesai! Fitur disimpan ke file: {output_file}")
+print(f"Selesai! Fitur disimpan ke file: {output_file}")

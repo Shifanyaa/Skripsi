@@ -99,7 +99,6 @@ class DBN(nn.Module):
         # --- Fine-tuning Supervised ---
         logging.info("Starting DBN fine-tuning...")
         optimizer = torch.optim.Adam(self.parameters(), lr=lr, weight_decay=weight_decay)
-        # Perhalus scheduler dengan patience=3
         scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
             optimizer, mode='min', factor=0.5, patience=3)
         criterion = nn.BCELoss()
@@ -112,7 +111,7 @@ class DBN(nn.Module):
         wait = 0
 
         for ep in range(epochs):
-            # Training loop...
+            # Training
             self.train()
             perm = torch.randperm(X_train.size(0))
             total_loss, correct, total = 0, 0, 0

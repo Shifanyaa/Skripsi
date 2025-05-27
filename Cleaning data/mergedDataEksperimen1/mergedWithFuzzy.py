@@ -33,7 +33,7 @@ def canonicalize_smiles(smiles):
         if mol:
             return MolToSmiles(mol, canonical=True)
     except:
-        pass  # Abaikan error dan lanjutkan
+        pass  
     
     # Coba tanpa sanitasi jika gagal
     try:
@@ -41,9 +41,9 @@ def canonicalize_smiles(smiles):
         if mol:
             return MolToSmiles(mol, canonical=True)
     except:
-        pass  # Jika tetap gagal, kembalikan None
+        pass  
     
-    return None  # Jika gagal total, buang data ini
+    return None  
 
 # Normalisasi dan konversi SMILES ke format kanonik
 print("Normalisasi dan konversi SMILES ke bentuk kanonik...")

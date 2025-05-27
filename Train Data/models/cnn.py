@@ -1,43 +1,68 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import logging
 
 class CNNModel(nn.Module):
     def __init__(self, input_dim):
         super(CNNModel, self).__init__()
-        self.conv1 = nn.Conv1d(1, 16, kernel_size=3, padding=1)
-        self.conv2 = nn.Conv1d(16, 32, kernel_size=3, padding=1)
-        self.fc1 = nn.Linear(32 * input_dim, 64)
-        self.out = nn.Linear(64, 1)
+        self.fc1 = nn.Linear(input_dim, 128)
+        self.fc2 = nn.Linear(128, 64)
+        self.fc3 = nn.Linear(64, 1)
+
+        # Tambahan untuk log training
+        self.train_losses = []
+        self.val_losses = []
+        self.train_accs = []
+        self.val_accs = []
 
     def forward(self, x):
-        x = x.unsqueeze(1)  # Add channel dimension for Conv1d
-        x = F.relu(self.conv1(x))
-        x = F.relu(self.conv2(x))
-        x = x.view(x.size(0), -1)  # Flatten the output for the fully connected layer
         x = F.relu(self.fc1(x))
-        return torch.sigmoid(self.out(x))
+        x = F.relu(self.fc2(x))
+        return torch.sigmoid(self.fc3(x))
 
-    def train_model(self, X_train, y_train, val_data=None, epochs=50, batch_size=64, lr=0.001):
+    def train_model(self, X_train, y_train, val_data=None, epochs=100, batch_size=64, lr=1e-3):
         optimizer = torch.optim.Adam(self.parameters(), lr=lr)
         loss_fn = nn.BCELoss()
 
-        logging.info("Starting CNN training...")
         for epoch in range(epochs):
-            perm = torch.randperm(X_train.size(0))
-            for i in range(0, X_train.size(0), batch_size):
-                xb = X_train[perm[i:i + batch_size]]
-                yb = y_train[perm[i:i + batch_size]].unsqueeze(1)
-                out = self.forward(xb)
-                loss = loss_fn(out, yb)
+            self.train()
+            permutation = torch.randperm(X_train.size()[0])
+            total_loss = 0
+            correct = 0
+            total = 0
+
+            for i in range(0, X_train.size()[0], batch_size):
+                indices = permutation[i:i+batch_size]
+                batch_x, batch_y = X_train[indices], y_train[indices]
+
                 optimizer.zero_grad()
+                outputs = self(batch_x).squeeze()
+                loss = loss_fn(outputs, batch_y)
                 loss.backward()
                 optimizer.step()
-            if epoch % 10 == 0 and val_data is not None:
-                val_x, val_y = val_data
+
+                total_loss += loss.item()
+                predicted = (outputs > 0.5).float()
+                correct += (predicted == batch_y).sum().item()
+                total += batch_y.size(0)
+
+            train_acc = correct / total
+            self.train_losses.append(total_loss / (total / batch_size))
+            self.train_accs.append(train_acc)
+
+            # Validation
+            if val_data is not None:
+                self.eval()
+                X_val, y_val = val_data
                 with torch.no_grad():
-                    preds = self.forward(val_x).squeeze()
-                    pred_bin = (preds > 0.5).float()
-                    acc = (pred_bin == val_y).float().mean().item()
-                    logging.info(f"Epoch {epoch}, Validation Accuracy: {acc:.4f}")
+                    val_outputs = self(X_val).squeeze()
+                    val_loss = loss_fn(val_outputs, y_val).item()
+                    val_pred = (val_outputs > 0.5).float()
+                    val_acc = (val_pred == y_val).sum().item() / y_val.size(0)
+
+                self.val_losses.append(val_loss)
+                self.val_accs.append(val_acc)
+
+            print(f"Epoch {epoch+1}/{epochs} | Train Loss: {self.train_losses[-1]:.4f}, Acc: {train_acc:.4f}" + (
+                f", Val Loss: {val_loss:.4f}, Val Acc: {val_acc:.4f}" if val_data else "")
+            )

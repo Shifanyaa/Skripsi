@@ -3,7 +3,6 @@ import requests
 import time
 
 def name_to_smiles(name):
-    """Mengonversi nama senyawa ke SMILES menggunakan OPSIN dan PubChem API"""
     print(f"Mencari SMILES untuk: {name}")
     
     # Coba konversi menggunakan OPSIN
